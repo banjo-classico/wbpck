@@ -1,17 +1,12 @@
-import express from 'express'
-import http from 'http'
-import path from 'path'
+import React, { Component } from 'react' 
+import { render } from 'react-dom'
 
-const app = express()
-const server = http.createServer(app)
-const port = process.env.PORT || 3000
+class App extends Component {
+  render () {
+    return (
+      <div>HELLO WORLD</div>
+      )
+  }
+}
 
-app.use(express.static(path.join(__dirname, './public')))
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'))
-})
-
-server.listen(port, () => {
-  console.log('Running on port ' + port)
-})
+render(<App />, document.getElementById('app'))
