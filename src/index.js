@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 class App extends Component {
   render () {
     return (
-      <div>HELLO WORLD</div>
+      <div>HELLO EVERYONE!!!</div>
       )
   }
 }

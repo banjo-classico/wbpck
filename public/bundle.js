@@ -77,7 +77,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'HELLO WORLD'
+	        'HELLO EVERYONE!!!'
 	      );
 	    }
 	  }]);
