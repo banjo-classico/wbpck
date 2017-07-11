@@ -1,7 +1,7 @@
 import { actionTypes } from "../actions/actions";
 
 const INITIAL_STATE = {
-  componentIndex: 2,
+  componentIndex: 0,
 };
 
 const mainShellReducer = (state = INITIAL_STATE, action) => {

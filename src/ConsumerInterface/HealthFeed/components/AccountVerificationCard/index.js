@@ -14,7 +14,7 @@ const AccountVerificationCard = ({ onClick }) => (
         key="icon"
         alt="SMS code"
       />
-      We have not verified your account yet.
+      
       Verify it now to enable your online appointment booking.
     </div>
     <div className={styles.buttonContainer}>

@@ -39,6 +39,7 @@ const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
 const renderApp = () => {
+  console.log("hiii");
   ReactDOM.render(
     <Provider store={store}>
       <Router history={history} onUpdate={logPageView} routes={routes(store)} />
