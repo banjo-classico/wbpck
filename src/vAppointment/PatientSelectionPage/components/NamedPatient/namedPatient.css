@@ -1,0 +1,31 @@
+@import "colors.css";
+@import "variables.css";
+
+.container {
+  border: 1px solid var(--color-pelorous);
+  border-radius: 32px;
+  display: flex;
+  width: 260px;
+  height: 65px;
+  cursor: pointer;
+  font-weight: var(--light-font);
+  color: var(--color-pelorous);
+  position: relative;
+  align-items: center;
+}
+
+.name {
+  text-transform: capitalize;
+  width: 100%;
+  margin-right: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.avatar {
+  width: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  margin: 0 10px;
+}

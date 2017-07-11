@@ -1,0 +1,35 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'shake.css';
+
+.item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 2.3529rem;
+}
+
+.input {
+  color: var(--color-white-40);
+  padding: 0.8823rem 0;
+  font-size: var(--font-medium);
+  font-weight: var(--thin-font);
+  min-height: 1.626em;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-white-40);
+  transition: .5s all;
+  @nest &:focus {
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    @nest & ~ * {
+      color: var(--color-white);
+    }
+  }
+  @nest & ~ * {
+    transition: .5s all;
+    color: var(--color-white-40);
+  }
+}

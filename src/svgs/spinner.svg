@@ -1,0 +1,49 @@
+<svg width='46px' height='46px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-default">
+  <style type="text/css">
+    .spinner0{animation: one 1s infinite}
+    .spinner1{animation: one 1s .083s infinite}
+    .spinner2{animation: one 1s .166s infinite}
+    .spinner3{animation: one 1s .25s infinite}
+    .spinner4{animation: one 1s .33s infinite}
+    .spinner5{animation: one 1s .417s infinite}
+    .spinner6{animation: one 1s .5s infinite}
+    .spinner7{animation: one 1s .583s infinite}
+    .spinner8{animation: one 1s .667s infinite}
+    .spinner9{animation: one 1s .75s infinite}
+    .spinner10{animation: one 1s .833s infinite}
+    .spinner11{animation: one 1s .917s infinite}
+    @keyframes one {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+  <rect class="spinner0"  x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(0 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner1" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(30 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner2" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(60 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner3" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(90 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner4" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(120 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner5" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(150 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner6" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(180 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner7" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(210 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner8" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(240 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner9" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(270 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner10" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(300 50 50) translate(0 -30)'>
+  </rect>
+  <rect  class="spinner11" x='46.5' y='40' width='7' height='20' rx='5' ry='5' transform='rotate(330 50 50) translate(0 -30)'>
+  </rect>
+</svg>

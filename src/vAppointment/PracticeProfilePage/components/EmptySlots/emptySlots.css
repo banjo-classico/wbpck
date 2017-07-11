@@ -1,0 +1,21 @@
+@import 'colors.css';
+
+.container {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.see-more {
+  color: var(--color-pelorous);
+  cursor: pointer;
+  font-size: 17px;
+}

@@ -1,0 +1,31 @@
+@import 'colors.css';
+
+.container {
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  fill: var(--color-white);
+  background-color: var(--color-pelorous);
+  outline: none;
+  cursor: pointer;
+}
+
+.white {
+  background-color: var(--color-white);
+  fill: var(--color-pelorous);
+}
+
+.inactive {
+  background-color: var(--color-light-grey);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+}

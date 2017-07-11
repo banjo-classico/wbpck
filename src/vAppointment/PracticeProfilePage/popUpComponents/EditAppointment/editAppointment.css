@@ -1,0 +1,38 @@
+@import 'colors.css';
+
+.container {
+  width: 100%;
+  padding: 50px 30px 0;
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.clicked {
+  padding: 10px 20px 0;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  color: var(--color-white);
+  font-size: 16px;
+  background: transparent;
+}
+
+.cancel-buttons {
+  composes: button from "../../../../styles/button.css";
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  width: 90px;
+  height: 45px;
+  margin: 10px 20px 0 0;
+}

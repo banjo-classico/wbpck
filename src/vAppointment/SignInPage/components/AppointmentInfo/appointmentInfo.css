@@ -1,0 +1,40 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  max-width: 400px;
+}
+.info1{
+  padding: 0 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.info2 {
+  composes: info1;
+  text-transform: lowercase;
+  border-left: 1px solid var(--color-white-40);
+}
+
+.icon {
+  max-width: 1.125em;
+  max-height: 1.125em;
+  min-width: 1.125em;
+  min-height: 1.125em;
+  margin: 0 10px 0 0;
+  fill: var(--color-white);
+}
+
+/*@media (min-width: 350px) {
+  .container {
+    margin-top: 15px;
+  }
+  .info1{padding: 10px;}
+}*/

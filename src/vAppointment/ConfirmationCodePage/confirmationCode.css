@@ -1,0 +1,116 @@
+@import 'nav.css';
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+:root {
+  --color-message: var(--color-dark-grey-50);
+  --color-link: var(--color-pelorous);
+  --color-phone: var(--color-dark-grey);
+}
+
+.heading {
+  position: absolute;
+
+  @nest &::after {
+    content: none;
+  }
+}
+
+.nav-container {
+  composes: nav-container from "../../styles/nav.css";
+  margin: 0.625em 0 0 0;
+  min-height: 7.500em;
+}
+.nav-items {
+  composes: page-nav from "../../styles/nav.css";
+  margin-top: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 120px 0;
+  color: var(--color-dark-grey);
+  fill: var(--color-pelorous);
+  min-height: 480px;
+}
+
+.container {
+  composes: page;
+}
+
+.message {
+  text-align: center;
+  min-height: 48px;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.info {
+  margin-top: 1.875em;
+  color: var(--color-message);
+  font-size: 1em;
+  text-align: center;
+  cursor: default;
+  @nest & a {
+    /*can't compose inner classes */
+    font-weight: var(--light-font);
+    margin: 0 0 0 5px;
+    color: var(--color-link);
+    cursor: pointer;
+  }
+}
+
+.gradient-page {
+  background: var(--background-gradient);
+  color: var(--color-white);
+}
+
+.clear-header {
+  background: transparent;
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.skip {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin: 0 0 1.250em 0;
+  cursor: pointer;
+}
+
+@media (--desktop) {
+  .heading {
+    position: static;
+
+    @nest &::after {
+      content: none;
+    }
+  }
+  .page {
+    width: 480px;
+    margin: auto;
+    padding: 15px 0;
+  }
+  .message {
+    font-size: 27px;
+    color: var(--color-dark-grey);
+    margin: 0 25px;
+  }
+
+  .nav-container {
+    margin: 60px;
+    min-height: 0;
+  }
+}

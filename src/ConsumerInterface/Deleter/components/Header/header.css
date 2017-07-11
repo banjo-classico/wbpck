@@ -1,0 +1,23 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  position: relative;
+  text-align: center;
+  font-size: var(--font-medium);
+  margin: 0 0 30px;
+}
+
+.text {
+  margin: 0 0 0 5px;
+  font-weight: var(--medium-font);
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 20px;
+  fill: var(--color-dark-grey);
+  transform: rotate(180deg);
+}

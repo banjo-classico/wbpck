@@ -1,0 +1,68 @@
+@import 'colors.css';
+@import 'screens.css';
+@import 'variables.css';
+@import 'nav.css';
+
+.app {
+  background: var(--background-gradient);
+}
+
+.hidden {
+  display: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: var(--color-white);
+  overflow: auto; -webkit-overflow-scrolling: touch;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.switcheroo {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+}

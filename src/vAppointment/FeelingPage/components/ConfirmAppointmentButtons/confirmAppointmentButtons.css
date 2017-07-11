@@ -1,0 +1,28 @@
+@import "colors.css";
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  border: none;
+  font-size: 1rem;
+}
+
+.confirm {
+  composes: button;
+  color: var(--color-white);
+  background: var(--color-pelorous);
+  margin: 0 0 10px 0;
+}
+
+.cancel {
+  composes: button;
+  color: var(--color-pelorous);
+  padding: 1rem 0 0;
+}
+
+.container {
+  width: 100%;
+}

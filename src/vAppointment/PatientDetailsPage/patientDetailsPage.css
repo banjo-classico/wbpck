@@ -1,0 +1,28 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.header{
+  background: var(--background-gradient);
+  color: var(--color-white);
+  fill: var(--color-white);
+
+  @nest &::after {
+    content: none;
+  }
+}
+.patient-details-page {
+  flex-grow: 1;
+  color: var(--color-mid-grey);
+}
+
+@media (--desktop) {
+  .patient-details-page {
+    width: 475px;
+    margin: 20px;
+    display: flex;
+  }
+  .logged-in {
+    width: 455px;
+    margin: 0;
+  }
+}

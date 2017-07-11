@@ -1,0 +1,126 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+:root {
+  --color-message: var(--color-dark-grey);
+  --color-phone: var(--color-dark-grey-50);
+  --color-button: var(--color-pelorous);
+  --color-background: var(--color-fine-grey);
+}
+
+.message {
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--color-message);
+  background-color: var(--color-background);
+  padding: 1rem;
+  min-height: 110px;
+  width: 100%;
+  max-width: 600px;
+  align-self: center;
+}
+
+.heading {
+  margin: 0 0 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.input {
+  background-color: transparent;
+  font-size: var(--font-large);
+  font-weight: var(--light-font);
+  color: var(--color-message);
+  padding: 0.313em;
+  margin: 0 10px 0 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.faded {
+  color: var(--color-light-grey);
+}
+
+.resend-button {
+  composes: button from "../../../../styles/button.css";
+  color: var(--color-white);
+  font-size: var(--font-small);
+  text-transform: capitalize;
+  background: var(--color-button);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  min-width: 65px;
+  min-height: 30px;
+}
+.countdown-spinner {
+  fill: var(--color-white);
+  width: 20px;
+  height: 20px;
+}
+
+.countdown-text {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0;
+  font-size: 1rem;
+}
+.countdown {
+  color: var(--color-pelorous);
+  margin: 0 5px;
+}
+
+.white {
+  @nest &.message {
+    color: var(--color-white);
+  }
+  @nest & .input-container {
+    border-bottom: 1px solid var(--color-white);
+  }
+  @nest & .resend-button {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+  }
+  @nest & .input {
+    color: var(--color-white);
+  }
+}
+
+@media (--desktop) {
+  .heading {
+    display: none;
+  }
+  .message {
+    max-width: 445px;
+    min-height: 100px;
+  }
+  .input-container {
+    border-bottom: none;
+  }
+  .input {
+    text-align: left;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    color: var(--color-dark-grey);
+    border-bottom: 1px solid var(--color-light-grey);
+  }
+  .resend-button {
+    font-size: 16px;
+    text-transform: capitalize;
+    background: var(--color-button);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 85px;
+    min-height: 38px;
+  }
+}

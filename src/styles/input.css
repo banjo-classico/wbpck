@@ -1,0 +1,23 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.input {
+  color: var(--color-dark-grey);
+  border: none;
+  border-radius: 0;
+  outline: none;
+  border-bottom: 1px solid var(--color-light-grey);
+  appearance: none;
+  background: transparent;
+  resize: none;
+  font-size: var(--font-medium);
+  font-weight: var(--thin-font);
+
+  @nest &:focus {
+    padding: 0.5882em 0 0.2941em 0;
+    min-height: 41px;
+  }
+  @nest &:invalid {
+    box-shadow: none;
+  }
+}

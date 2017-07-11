@@ -1,0 +1,17 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  background: var(--color-white);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.spinner {
+  fill: var(--color-mid-grey);
+  width: 30px;
+  height: 30px;
+}

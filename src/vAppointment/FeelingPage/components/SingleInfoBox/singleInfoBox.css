@@ -1,0 +1,29 @@
+@import 'colors.css';
+
+.container {
+  border-bottom: 1px solid var(--color-fine-grey);
+  color: var(--color-dark-grey);
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+.label {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+.info {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.img {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px 0;
+}

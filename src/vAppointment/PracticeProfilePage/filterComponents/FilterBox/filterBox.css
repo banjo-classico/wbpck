@@ -1,0 +1,21 @@
+@import 'colors.css';
+
+.container {
+  width: 100%;
+  height: 70px;
+  background: var(--background-gradient);
+  color: var(--color-white);
+  border-radius: 5px;
+  display: flex;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-filters {
+  display: flex;
+  width: 55%;
+  height: 100%;
+  justify-content: flex-end;
+}

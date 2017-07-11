@@ -1,0 +1,41 @@
+@import 'colors.css';
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white-90);
+}
+
+.inner {
+  width: 480px;
+  height: 560px;
+  background: var(--color-white);
+  box-shadow: 0 3px 5px var(--box-shadow-21);
+  border-radius: 5px;
+  padding: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9990;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-white);
+  background: var(--color-mid-grey);
+  border-radius: 50%;
+  padding: 7px;
+}

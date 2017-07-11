@@ -1,0 +1,81 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  position: relative;
+}
+
+.current-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--color-light-grey);
+  font-size: var(--font-medium);
+}
+.error {
+  font-size: var(--font-small);
+  color: var(--color-white);
+  background-color: var(--color-red);
+  padding: 15px;
+
+  @nest & .arrow {
+    fill: var(--color-white);
+  }
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  fill: var(--color-mid-grey);
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.option {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  border-radius: 0;
+  background-color: var(--color-dark-grey);
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  padding: 15px 0;
+  margin: 0;
+  transition: background-color .5s ease, color .5s ease;
+
+  @nest &:active {
+    background-color: var(--color-fine-grey);
+    color: var(--color-dark-grey);
+  }
+}
+
+.enter {
+  @nest &.options {
+    transition: .5s all ease-out;
+    max-height: 0;
+  }
+}
+.enter-active {
+  @nest &.options {
+    max-height: 300px;
+  }
+}
+.leave {
+  @nest &.options {
+    max-height: 300px;
+  }
+}
+.leave-active {
+  @nest &.options {
+    transition: .5s all ease;
+    max-height: 0;
+  }
+}

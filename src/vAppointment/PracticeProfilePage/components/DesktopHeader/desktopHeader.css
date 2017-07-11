@@ -1,0 +1,40 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.blue-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 80%;
+  max-width: var(--max-content-width);
+  z-index: 2;
+  color: var(--color-white);
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: var(--max-content-width);
+  transform: translateX(-50%);
+  height: 460px;
+  z-index: -1;
+}
+
+.logIn{
+  cursor: pointer;
+}

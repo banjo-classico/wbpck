@@ -1,0 +1,79 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  border-top: 1px solid var(--color-light-grey);
+
+  @nest & a {
+    color: var(--color-pelorous);
+    text-decoration: none;
+    font-weight: var(--light-font);
+    font-size: var(--font-small);
+  }
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+.label {
+  font-size: var(--font-small);
+  font-weight: var(--medium-font);
+}
+.reason-label {
+  composes: label;
+  margin: 0 0 15px;
+}
+
+.text {
+  color: var(--color-mid-grey);
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  color: var(--color-pelorous);
+  font-size: var(--font-small);
+  border: none;
+}
+
+.address {
+  font-size: var(--font-small);
+}
+
+.iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 15px;
+}
+
+.cancel-button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: var(--light-font);
+  color: var(--color-dark-grey);
+  text-align: center;
+  padding: 15px 0;
+  background-color: var(--color-fine-grey);
+}
+
+.cta-icon {
+  height: 20px;
+  width: 20px;
+}
+.cta-button {
+  z-index: 0;
+  bottom: 20px;
+}

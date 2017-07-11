@@ -1,0 +1,12 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  margin: 0 0 20px 0;
+}
+
+.title {
+  color: var(--color-dark-grey);
+  font-size: 1rem;
+  text-transform: none;
+}

@@ -1,0 +1,76 @@
+@import "colors.css";
+@import "screens.css";
+
+.outer {
+  width: 100%;
+  background: var(--color-blue-chill);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: auto;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.months {
+  max-width: 90%;
+  overflow-x: auto;
+  padding: 5px 0;
+}
+
+.month {
+  color: var(--color-white-40);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 3px solid var(--color-turquoise);
+  color: var(--color-white);
+}
+
+.bright {
+  color: var(--color-white);
+}
+
+.icon {
+  width: 1.125em;
+  height: 1.125em;
+  stroke: none;
+}
+
+.enter {
+  transition: .4s all ease-out;
+  opacity: 0;
+}
+
+.enter-active {
+  opacity: 1;
+}
+
+.leave {
+  transition: .4s all ease-out;
+  opacity: 1;
+}
+
+.leave-active {
+  opacity: 0;
+}
+
+@media (--desktop) {
+  .container {
+    width: 80%;
+    padding: 5px 0;
+  }
+  .centre {
+    margin: auto;
+  }
+
+}

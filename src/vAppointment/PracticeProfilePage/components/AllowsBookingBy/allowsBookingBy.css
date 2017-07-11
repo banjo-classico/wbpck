@@ -1,0 +1,9 @@
+@import 'colors.css';
+
+.container {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-mid-grey);
+}

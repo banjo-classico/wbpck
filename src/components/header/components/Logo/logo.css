@@ -1,0 +1,15 @@
+@import 'screens.css';
+.container {
+  height: 28px;
+}
+
+.icon {
+  height: 28px;
+  stroke: none;
+}
+
+@media (--mobile) {
+  .icon {
+    width: 100%;
+  }
+}

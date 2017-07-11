@@ -1,0 +1,58 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+.second-text {
+  margin: 20px 0 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0;
+  padding: 40px 0;
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
+  width: 40vw;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.no {
+  composes: button;
+  background: var(--color-fine-grey);
+  color: var(--color-dark-grey);
+}
+.yes {
+  composes: button;
+  background: var(--color-pelorous);
+  color: var(--color-white);
+}
+
+@media (--desktop) {
+  .container {
+    padding: 25px 45px;
+    font-size: 16px;
+  }
+  .second-text {
+    margin: 5px 0 50px;
+  }
+  .button-container {
+    max-width: 270px;
+  }
+  .button {
+    border-radius: 5px;
+    width: 125px;
+    height: 60px;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,42 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.avatar {
+  min-width: 5.8823rem;
+  max-width: 5.8823rem;
+  min-height: 5.8823rem;
+  max-height: 5.8823rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.avatar-preview {
+  composes: avatar;
+  padding: 5.8823rem 0 0 0;
+  background-size: cover;
+  background-position: center;
+  /*transform: rotate(90deg);*/
+}
+
+.altImg {
+  composes: avatar;
+
+  @nest &>svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-pelorous);
+  margin: 15px auto;
+  text-align: center;
+  cursor: pointer;
+}
+.input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}

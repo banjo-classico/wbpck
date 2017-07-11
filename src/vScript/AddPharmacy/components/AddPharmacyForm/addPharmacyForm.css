@@ -1,0 +1,44 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  padding: 0.8823rem 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: var(--font-19);
+  font-weight: var(--thin-font);
+
+  @nest &:focus {
+    padding: 0.8823rem 0;
+  }
+}
+
+.label {
+  color: var(--color-mid-grey);
+  font-size: var(--font-small);
+}
+
+.cta {
+  margin: 0 15px 15px 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-height: 100px;
+}

@@ -1,0 +1,88 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--top-bottom-gradient);
+  color: var(--color-white);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-medium);
+}
+
+.list-container {
+  position: absolute;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-practice-container {
+  position: absolute;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.where {
+  margin: 30px 0 0;
+  font-weight: var(--medium-font);
+}
+
+.top {
+  top: auto;
+}
+
+.back-arrow {
+  width: 25px;
+  height: 20px;
+  fill: var(--color-white);
+  transform: rotate(180deg);
+}
+
+/* -------------------- ANIMATIONS --------------------- */
+.enter {
+ right: 100%;
+}
+.enter-active {
+  transition: .3s ease;
+  right: 0;
+}
+.leave {
+  left: 0;
+}
+.leave-active {
+  transition: .3s ease;
+  left: 100%;
+}
+.list-enter {
+ left: 100%;
+}
+.list-enter-active {
+  transition: .3s ease;
+  left: 0;
+}
+.list-leave {
+  right: 0;
+}
+.list-leave-active {
+  transition: .3s ease;
+  right: 100%;
+}
+
+@media (--desktop) {
+  .container {
+    position: absolute;
+    overflow: hidden;
+  }
+}

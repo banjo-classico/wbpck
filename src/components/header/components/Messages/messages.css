@@ -1,0 +1,10 @@
+@import 'colors.css';
+
+.container {
+
+}
+.icon {
+  width: 25px;
+  height: 16px;
+  stroke: none;
+}

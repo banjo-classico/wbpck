@@ -1,0 +1,36 @@
+@import 'variables.css';
+
+.container {
+  display: flex;
+  margin: 0.8823rem 0;
+}
+
+.script-icon {
+  width: 1.4705rem;
+  height: 1.7647rem;
+  margin: 0 0.8823rem 0 0;
+}
+
+.open-main-details {
+  text-align: center;
+  margin: 0 auto 0.8823rem;
+}
+
+.patient {
+  font-size: var(--font-small);
+  font-weight: var(--medium-font);
+}
+.open-patient {
+  font-size: var(--font-19);
+}
+
+.practice {
+  font-size: var(--font-tiny);
+}
+.open-practice {
+  font-size: var(--font-small);
+}
+
+.doctor {
+  font-size: var(--font-small);
+}

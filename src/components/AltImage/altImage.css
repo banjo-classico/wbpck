@@ -1,0 +1,14 @@
+@import 'colors.css';
+
+.container {
+  background-color: var(--color-fine-grey);
+  position: relative;
+}
+
+.camera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: var(--color-dark-grey);
+}

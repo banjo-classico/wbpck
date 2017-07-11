@@ -1,0 +1,122 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+:root {
+  --color-line: var(--color-light-grey);
+  --button-container-vertical-padding: 5px;
+  --button-height: 40px;
+  --container-height: calc(100vh - var(--header-height) - var(--button-height) - (2*var(--button-container-vertical-padding)));
+  --container-height-ios: calc(var(--container-height) - 70px);
+}
+
+.absolute {
+  position: absolute;
+}
+.app {
+  @nest &>div:nth-child(2) {
+    padding: 140px 0 0;
+  }
+}
+
+.outer {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 0 15px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.z {
+  position: relative;
+  /*overflow: hidden;*/
+  z-index: 20;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 5px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background: var(--color-white);
+  width: 100%;
+  padding: var(--button-container-vertical-padding) 0;
+}
+
+.button-icon {
+  height: 20px;
+  max-height: 20px;
+  width: 20px;
+  transition: transform .5s ease;
+}
+.text-button-icon {
+  width: 15px;
+  height: auto;
+  margin: 0 10px 0 0;
+  transition: transform .5s ease;
+}
+.cta-icon-card {
+  composes: button-icon;
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+
+.cta-button {
+  z-index: 11;
+}
+.cta-button-card {
+  z-index: 20;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--top-bottom-gradient);
+  color: var(--color-white);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-medium);
+}
+
+.top {
+  top: auto;
+}
+
+.enter {
+  transform: scale(.0);
+  top: 100%;
+  left: 100%;
+}
+.enter-active {
+  transform: scale(1);
+  transition: .3s all;
+  top: 0;
+  left: 0;
+}
+.leave {
+  transform: scale(1);
+  top: 0;
+  left: 0;
+}
+.leave-active {
+  transform: scale(.0);
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}

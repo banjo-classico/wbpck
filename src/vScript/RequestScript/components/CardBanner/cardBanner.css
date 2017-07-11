@@ -1,0 +1,24 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.outer-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.container {
+  display: inline;
+  color: var(--color-white);
+  font-size: var(--font-tiny);
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 13px;
+}
+
+.tick {
+  width: 10px;
+  height: 10px;
+  fill: var(--color-white);
+  margin: 0 10px 0 0;
+}

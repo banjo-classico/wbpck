@@ -1,0 +1,81 @@
+@import 'colors.css';
+
+.absolute {
+  position: absolute;
+}
+.app {
+  @nest &>div:nth-child(2) {
+    padding: 140px 0 0;
+  }
+}
+
+.outer {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px 30px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.inner-container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.button-icon {
+  height: 20px;
+  width: 20px;
+  transition: transform .5s ease;
+}
+.cta-icon-card {
+  composes: button-icon;
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+
+.cta-button {
+  z-index: 11;
+}
+.cta-button-card {
+  z-index: 20;
+}
+
+/* mainly for desktop purposes*/
+.z {
+  position: relative;
+}
+
+
+.enter {
+  transform: scale(.05);
+  top: 40%;
+  left: 33%;
+  border-radius: 25%;
+}
+.enter-active {
+  transform: scale(1);
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  transition: .3s ease-out;
+}
+.leave {
+  transform: scale(1);
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+.leave-active {
+  transform: scale(.05);
+  top: 40%;
+  left: 33%;
+  border-radius: 25%;
+  transition: .3s all;
+}

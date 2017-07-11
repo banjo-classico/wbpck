@@ -1,0 +1,48 @@
+@import 'colors.css';
+
+.container {
+  margin: 40px 20px;
+}
+.form {
+  display: flex;
+}
+.name-container {
+  width: 100%;
+  display: flex;
+  margin: 0 20px 0 0;
+
+  @nest &>div {
+    width: auto;
+  }
+}
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  width: 100%;
+  font-size: 20px;
+  padding: 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  @nest &:focus {
+    padding: 0 0 10px;
+    min-height: 34px;
+  }
+}
+.first-name {
+  composes: input;
+  width: 100px;
+  margin: 0;
+}
+.surname {
+  composes: input;
+  margin: 0 10px 0 0;
+}
+.birthday-container {
+  width: 125px;
+}
+.birthday {
+  composes: input;
+  width: 125px;
+  text-align: center;
+}

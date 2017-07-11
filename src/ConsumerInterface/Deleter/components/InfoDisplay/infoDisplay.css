@@ -1,0 +1,10 @@
+@import 'colors.css';
+
+.container {
+  text-align: center;
+  background-color: var(--color-pelorous);
+  color: var(--color-white);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0 0 30px;
+}

@@ -1,0 +1,42 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.header {
+  color: var(--color-white);
+
+  @nest &::after {
+    content: none;
+  }
+}
+.header-arrow {
+  fill: var(--color-white);
+}
+.retry-container {
+  text-align: left;
+  width: 100%;
+}
+.retry {
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.logo {
+  height: 25px;
+  fill: var(--color-white);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container {
+  padding: 40px 0;
+  flex-grow: 1;
+}
+
+@media (--desktop) {
+  .container {
+    width: 600px;
+    height: 500px;
+  }
+
+}

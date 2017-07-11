@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.bottom-margin {
+  margin: 0 0 100px;
+}
+
+.script-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: static;
+
+  @nest &>div:first-child>div {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  @nest &>div:last-child>div {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  @nest &>div:last-child>div>div {
+    border-bottom: none;
+  }
+}
+
+.container {
+  composes: card from "../../../../styles/card.css";
+  border-radius: 4px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.bold {
+  font-weight: var(--light-font);
+  margin: 0 0 15px;
+}
+
+.text-container {
+  font-size: var(--font-small);
+  font-weight: var(--light-font);
+  margin: 0 0 15px;
+}
+
+.try-button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  padding: 0;
+  font-size: var(--font-small);
+  color: var(--color-pelorous);
+}
+
+.spinner {
+  width: 4.2rem;
+  height: 4.2rem;
+  fill: var(--color-mid-grey);
+}

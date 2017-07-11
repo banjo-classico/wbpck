@@ -1,0 +1,39 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.input {
+  background-color: transparent;
+  font-size: var(--font-large);
+  padding: 5px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 5px;
+  max-width: 20%;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 275px;
+}
+
+.error {
+  width: calc(100% - 10px);
+  left: 5px;
+}
+
+@media (--desktop) {
+  .container {
+    width: 285px;
+    max-width: 285px;
+  }
+  .input {
+    font-size: 35px;
+  }
+}

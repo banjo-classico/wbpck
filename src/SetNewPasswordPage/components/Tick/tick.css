@@ -1,0 +1,25 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  border-radius: 50%;
+  border: 5px solid var(--color-pelorous);
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  margin: 50px 0 0;
+}
+.tick {
+  fill: var(--color-pelorous);
+  height: 50px;
+  min-height: 50px;
+  width: 55px;
+  margin: auto;
+  display: block;
+}
+
+@media (--desktop) {
+  .container {
+    margin: 50px 0 30px;
+  }
+}

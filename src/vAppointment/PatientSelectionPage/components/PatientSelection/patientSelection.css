@@ -1,0 +1,25 @@
+@import "colors.css";
+
+.outer-container {
+  flex-grow: 1;
+  overflow: auto;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+.container > * {
+  margin: 10px 0;
+}
+.spinner {
+  fill: var(--color-pelorous);
+}
+.overlay {
+  background-color: var(--color-white-50);
+  z-index: 10;
+  flex-grow: 1;
+}

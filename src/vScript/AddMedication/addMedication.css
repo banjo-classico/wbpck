@@ -1,0 +1,83 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'tags.css';
+
+.patient-details-container {
+  display: flex;
+  margin: 0 0 25px;
+}
+
+.patient-details {
+  font-size: var(--font-small);
+  font-weight: var(--thin-font);
+}
+
+.patient-name {
+  font-size: var(--font-large);
+  font-weight: var(--light-font);
+}
+
+.script-icon {
+  width: 45px;
+  height: 55px;
+  margin: 0 30px 0 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-height: 100px;
+  margin: 0 0 10px;
+}
+
+.cancel {
+  composes: button from "../../styles/button.css";
+  border: none;
+  padding: 0;
+  margin: 0 15px 40px;
+  color: var(--color-pelorous);
+  font-size: var(--font-small);
+}
+
+.cta {
+  margin: 0 15px 15px;
+}
+
+.container :global(.react-tagsinput) {
+  border: none;
+  padding: 0;
+  display: flex;
+  overflow: auto;
+
+  @nest &>span:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.container :global(.react-tagsinput-input) {
+  color: var(--color-grey-5);
+  margin: 5px 0 0;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px dashed var(--color-grey-2);
+  /*font size is 16 to avoid auto zoom on mobile phones*/
+  font-size: 16px;
+  
+  @nest &::placeholder {
+    color: var(--color-grey-5);
+    font-size: var(--font-small);
+  }
+}
+
+.container :global(.react-tagsinput-tag) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2.9411rem;
+  padding: 12.5px 15px;
+  margin: 5px 0;
+}

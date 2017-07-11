@@ -1,0 +1,29 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  padding: 1rem;
+  background: var(--color-white);
+  margin: 15px;
+  box-shadow: 0 1px 4px var(--box-shadow-16);
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  color: var(--color-dark-grey);
+  padding: 20px 50px 30px;
+}
+
+.next-available {
+  background-color: var(--color-fine-grey);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  text-align: center;
+}
+
+.date {
+  color: var(--color-pelorous);
+  margin: 0 0 0 5px;
+}

@@ -1,0 +1,113 @@
+@import 'colors.css';
+@import 'variables.css';
+
+:root {
+  --color-heading: var(--color-dark-grey);
+  --color-address: var(--color-dark-grey);
+}
+
+.listing {
+  position: relative;
+  background: var(--color-white);
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 660px;
+  padding: 15px 15px 20px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  border-radius: 4px;
+}
+
+.listing:last-child {
+  margin-bottom: 75px;
+}
+
+.inner-container {
+  display: flex;
+}
+.status {
+  font-size: var(--font-small);
+}
+.not-online {
+  color: var(--color-red);
+}
+.online {
+  color: var(--color-green);
+}
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+.ellipsis {
+  height: 5px;
+  width: 25px;
+  fill: var(--color-light-grey);
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.profile > * {
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 1em;
+  text-transform: capitalize;
+  color: var(--color-heading);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-weight: var(--medium-font);
+}
+
+.address {
+  color: var(--color-address);
+  font-size: 0.875em;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.img {
+  border-radius: 50%;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+  margin: 0 0.882em 5px 0;
+}
+.button {
+  margin: 20px 0 0 0;
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  background: var(--color-pelorous);
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-size: 0.875em;
+  padding: 15px;
+}
+
+.not-clickable {
+  cursor: not-allowed;
+}
+
+.not-available {
+  composes: img;
+  text-align: center;
+  background: var(--color-mid-grey);
+  color: var(--color-white);
+  position: relative;
+}
+.not-available-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: var(--font-tiny);
+}

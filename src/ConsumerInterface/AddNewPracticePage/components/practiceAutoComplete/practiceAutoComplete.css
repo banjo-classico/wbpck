@@ -1,0 +1,45 @@
+@import "colors.css";
+@import "variables.css";
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  color: var(--color-white);
+  min-height: 36px;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-white);
+  @nest &::placeholder {
+    color: var(--color-white-50);
+    font-weight: var(--light-font);
+    font-size: 1rem;
+  }
+  @nest &:focus {
+    padding: 1rem 0;
+  }
+}
+.black-input {
+  color: var(--color-dark-grey);
+  border-bottom: 1px solid var(--color-light-grey);
+  @nest &::placeholder {
+    color: var(--color-mid-grey);
+    font-size: 1rem;
+    font-weight: var(--light-font);
+    padding-left: 5px;
+  }
+}
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding-top: 15px;
+}
+.white-container {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  background-color: var(--color-white);
+  padding: 10px;
+}
+.black-item-style {
+  font-size: 1rem;
+}

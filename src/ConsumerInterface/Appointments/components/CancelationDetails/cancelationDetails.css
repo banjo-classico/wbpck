@@ -1,0 +1,7 @@
+@import 'variables.css';
+
+.other-details {
+  font-size: var(--font-small);
+  margin: 0.5882rem 0 0.8823rem 0;
+  line-height: 1.1764rem;
+}

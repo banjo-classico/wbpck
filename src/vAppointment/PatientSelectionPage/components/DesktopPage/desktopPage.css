@@ -1,0 +1,100 @@
+@import "colors.css";
+@import "screens.css";
+@import "variables.css";
+
+.header {
+  background: var(--background-gradient);
+  color: var(--color-white);
+  fill: var(--color-white);
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.greeting {
+  font-size: 27px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.title {
+  padding: 15px 30px 60px;;
+  text-align: center;
+  font-size: var(--font-medium);
+  color: var(--color-mid-grey);
+  font-weight: var(--thin-font);
+}
+.selection-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+.selection-outer-container {
+  flex-grow: 1;
+  overflow: auto;
+  position: relative;
+}
+.logout-text {
+  margin-top: 40px;
+  align-self: center;
+  color: var(--color-pelorous);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px 10px;
+  color: var(--color-dark-grey);
+  width: 475px;
+}
+
+.logout-line {
+  font-size: 1.125rem;
+  text-align: center;
+  padding: 20px 0 6rem;
+}
+
+.logout-link {
+  color: var(--color-pelorous);
+  margin: 0 0 0 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  width: 70px;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  color: var(--color-pelorous);
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forward-arrow {
+  width: 0.7em;
+  height: 0.7em;
+  fill: var(--color-pelorous);
+  margin-left: 0.313em;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+}
+.spinner-icon {
+  fill: var(--color-pelorous);
+  width: 25px;
+}

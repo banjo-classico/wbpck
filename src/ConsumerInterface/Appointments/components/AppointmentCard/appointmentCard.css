@@ -1,0 +1,130 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.outer-container {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.past-container {
+  margin: 0;
+}
+
+.open-header {
+  background-image: var(--header-gradient);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: var(--color-white);
+  font-size: var(--font-medium);
+  font-weight: var(--light-font);
+  fill: var(--color-white);
+
+  @nest &::after {
+    content: '';
+    background: var(--header-gradient);
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 3px 6px var(--box-shadow-16);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: -1;
+  }
+}
+
+.arrow {
+  transform: rotate(180deg);
+  width: 20px;
+  height: 25px;;
+}
+
+.container {
+  margin: 0 15px 80px;
+}
+
+.inner-container {
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  max-height: 185px;
+  width: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+  transition: max-height .8s ease;
+}
+.no-box-shadow {
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-light-grey);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.past-card {
+  padding: 15px 0 0;
+}
+
+.label {
+  font-size: 0.6470rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 90px;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0 0 90px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+
+.open-card {
+  height: 100%;
+  max-height: 740px;
+  transition: max-height .8s ease;
+  cursor: default;
+}
+
+@media (orientation: landscape) {
+  .open-card {
+    min-height: 780px;
+  }
+}
+
+@media (--desktop) {
+  .outer-container {
+    min-width: 660px;
+  }
+  .open {
+    position: fixed;
+    height: 90%;
+    max-width: 920px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .safari {
+    position: absolute;
+    height: 100%;
+  }
+}

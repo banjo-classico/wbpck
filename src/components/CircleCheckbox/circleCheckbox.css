@@ -1,0 +1,22 @@
+@import "colors.css";
+.circle-icon {
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid var(--color-mid-grey);
+  width: 20px;
+  height: 20px;
+}
+
+.selected {
+  @nest &:after {
+    content: " ";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color-pelorous);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,23 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 15px 15px 45px;
+}
+
+.arrow {
+  width: 25px;
+  height: 20px;
+  transform: rotate(180deg);
+  fill: var(--color-white);
+  position: absolute;
+  left: 15px;
+}
+
+.text {
+  font-size: var(--font-medium);
+  font-weight: var(--light-font);
+}

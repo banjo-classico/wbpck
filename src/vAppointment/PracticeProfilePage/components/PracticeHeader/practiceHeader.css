@@ -1,0 +1,27 @@
+@import 'screens.css';
+@import 'colors.css';
+
+.container {
+  display: block;
+}
+
+.img {
+  height: 268.5px;
+  margin: -20px -20px 0px -20px;
+}
+
+.overlay {
+  display: none;
+}
+
+.spinner {
+  fill: var(--color-pelorous);
+  width: 75px;
+  height: 75px;
+}
+
+@media (--desktop) {
+  .container {
+    position: relative;
+  }
+}

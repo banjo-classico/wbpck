@@ -1,0 +1,47 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60;
+  right: 0;
+  width: 100%;
+  padding: 0 15px
+}
+
+.text {
+  font-size: var(--font-medium);
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--color-light-grey);
+  margin: 0 0 30px;
+}
+
+.icon {
+  height: 20px;
+  width: 15px;
+  margin: 0 15px 0 0;
+}
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  border-bottom: none;
+  font-size: 1.7058rem;
+  padding: 0;
+  @nest &:focus {
+    padding: 0;
+    min-height: 34px;
+  }
+}
+
+.button {
+  align-self: flex-end;
+}

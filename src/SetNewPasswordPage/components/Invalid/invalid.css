@@ -1,0 +1,44 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 50px 0 0 0;
+}
+
+.text {
+  margin: 20px 40px;
+}
+
+.button {
+  composes: button from "../../../styles/button.css";
+  font-size: 1em;
+  text-transform: capitalize;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  min-height: 50px;
+  width: 70vw;
+  max-width: 235px;
+  margin: 30px 0 0 0;
+  padding: 15px 40px;
+}
+
+@media (--desktop) {
+  .container {
+    @nest &>span:first-child {
+      font-size: 27px;
+    }
+  }
+  .text {
+    color: var(--color-dark-grey);
+  }
+  .button {
+    color: var(--color-white);
+    background: var(--color-pelorous);
+    border: none;
+    min-height: 60px;
+  }
+}

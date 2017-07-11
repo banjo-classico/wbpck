@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  composes: button from "../../styles/button.css";
+  background-color: var(--color-pelorous);
+  border: none;
+  border-radius: 40px;
+  padding: 1.4706rem;
+  fill: var(--color-white);
+  color: var(--color-white);
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 8px 10px var(--box-shadow-21);
+  transition: background-color .5s ease, box-shadow .5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.open {
+  background-color: var(--color-white-10);
+  box-shadow: none;
+}
+
+.icon-with-text {
+  width: var(--font-small);
+  min-width: var(--font-small);
+  max-width: var(--font-small);
+  height: var(--font-small);
+  min-height: var(--font-small);
+  max-height: var(--font-small);
+  margin: 0 10px 0 0;
+}
+
+.open-icon {
+  transform: rotate(135deg);
+}
+
+.text {
+  padding: 3px;
+}
+
+@media (--desktop) {
+  .container {
+    position: absolute;
+  }
+}

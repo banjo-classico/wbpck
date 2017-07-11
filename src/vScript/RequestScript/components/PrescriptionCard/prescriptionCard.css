@@ -1,0 +1,87 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.outer-container {
+  position: relative;
+  width: 100%;
+  margin: 0 0 10px;
+}
+.past-outer {
+  margin: 0;
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0 0 90px;
+  height: 100vh;
+  overflow: scroll;
+  background-color: var(--color-white);
+}
+
+.open-header {
+  background-image: var(--header-gradient);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: var(--color-white);
+  font-size: var(--font-15);
+  font-weight: var(--thin-font);
+  fill: var(--color-white);
+
+  @nest &::after {
+    content: '';
+    background: var(--header-gradient);
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 3px 6px var(--box-shadow-16);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: -1;
+  }
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  width: 20px;
+  height: 25px;;
+}
+
+.ellipsis {
+  width: 20px;
+  height: 5px;
+  fill: var(--color-white);
+  margin: 0 0 0 15px;
+}
+
+.open-container {
+  margin: 0 15px 80px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+
+.container {
+  width: 100%;
+  /*height: 150px;*/
+  border-radius: 4px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  background-color: var(--color-white);
+  margin: 0 0 10px;
+  padding: 0.8823rem;
+}
+
+.past-container {
+  padding: 0.8823rem 0.8823rem 0;
+  border-radius: 0;
+  margin: 0;
+}

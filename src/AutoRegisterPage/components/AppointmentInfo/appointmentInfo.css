@@ -1,0 +1,66 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.outer {
+  border-bottom: 2px solid var(--color-turquoise);
+  min-height: 60px;
+  background: var(--color-blue-chill);
+  color: var(--color-white);
+  display: flex;
+}
+
+.confirming {
+  border-top: 1px solid var(--color-pelorous);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  max-width: var(--max-content-width);
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  max-width: 50%;
+  padding: 0 10px 0 0;
+}
+
+.doctor-img {
+  max-width: 33px;
+  min-width: 33px;
+  max-height: 33px;
+  min-height: 33px;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+}
+
+.doctor-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.time-info {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  border-left: 1px solid var(--color-white-40);
+}
+
+.time {
+  width: 100%;
+  padding: 0 0 0 15px;
+
+  @nest & span {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+@import 'variables.css';
+@import 'colors.css';
+@import 'screens.css';
+
+.container{
+  overflow: scroll;
+  height: 35px;
+  margin: 15px 15px 30px 15px;
+  font-weight: var(--medium-font);
+  border-bottom: solid 1px var(--color-white-25);
+  display: flex;
+}
+
+@media (--desktop) {
+  .container {
+    overflow: hidden;
+  }
+}

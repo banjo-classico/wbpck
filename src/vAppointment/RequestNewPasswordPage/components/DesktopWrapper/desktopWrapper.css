@@ -1,0 +1,50 @@
+@import 'colors.css';
+
+.hidden {
+  display: none;
+}
+.app {
+  @nest &>div:nth-child(2) {
+    background: var(--color-fine-grey);
+    position: relative;
+  }
+}
+
+.container {
+  flex-grow: 1;
+  margin: 0 30px;
+  color: var(--color-white);
+  fill: var(--color-white);
+  width: auto;
+}
+
+.desktop-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 265px;
+  background: var(--background-gradient);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.logo {
+  fill: var(--color-white);
+  width: 120px;
+}
+
+.inner-container {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  width: 630px;
+  height: 485px;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--box-shadow-16);
+  padding: 60px 70px;
+}

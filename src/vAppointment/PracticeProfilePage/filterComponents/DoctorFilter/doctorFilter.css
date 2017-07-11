@@ -1,0 +1,46 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.outer-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white-25);
+  color: var(--color-white);
+  border-radius: 4px;
+  width: 400px;
+  height: 100%;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  border-bottom: none;
+  color: var(--color-white);
+  font-size: 18px;
+  font-style: italic;
+  width: 100%;
+
+  @nest &:focus {
+    padding: 0;
+    min-height: 41px;
+  }
+  @nest &::placeholder {
+    color: var(--color-white-40);
+    font-size: 18px;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}

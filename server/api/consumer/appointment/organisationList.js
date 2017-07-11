@@ -1,0 +1,48 @@
+const practices = [
+  {
+    "Id": "1",
+    "Name": "Vensa Health Clinic",
+    "Address": "459 Great South Road, Penrose, Auckland, Auckland 1061, New Zealand",
+    "Phone": null,
+    "IsUsingVensa": true,
+    "IsOnline": true,
+    "PictureUrl": "https://www.nbr.co.nz/sites/default/files/styles/article_full_300w/public/story_imgs/AAEAAQAAAAAAAAWoAAAAJDA5MTIwZDM5LTgwNmItNDViNi1iMTdlLWNiMmE3OWFjY2U3Ng.jpg?itok=ypYFDFC8",
+    "PracticeId": "1",
+    "UrlName": "vensahealth",
+  },
+  {
+    "Id": "2",
+    "Name": "Knicks Knee Club",
+    "Address": "459 Great South Road, Penrose, Auckland, Auckland 1061, New Zealand",
+    "Phone": null,
+    "IsUsingVensa": true,
+    "IsOnline": true,
+    "PictureUrl": "http://www.newhealthadvisor.com/images/1HT02822/1.jpg",
+    "PracticeId": "2",
+    "UrlName": "knicksknees",
+  },
+  {
+    "Id": "3",
+    "Name": "Dr Hu's Tardis",
+    "Address": "459 Great South Road, Penrose, Auckland, Auckland 1061, New Zealand",
+    "Phone": null,
+    "IsUsingVensa": true,
+    "IsOnline": false,
+    "PictureUrl": "http://tardistopia.net/wp-content/uploads/2013/06/dr-n-sonic-screwdriver-david-tennant-527197_800_533.jpg",
+    "PracticeId": "3",
+    "UrlName": "drhus",
+  },
+  {
+    "Id": "4",
+    "Name": "Real House Wives Of Auckland Medical Center",
+    "Address": "459 Great South Road, Penrose, Auckland, Auckland 1061, New Zealand",
+    "Phone": null,
+    "IsUsingVensa": false,
+    "IsOnline": true,
+    "PictureUrl": "http://www.stuff.co.nz/content/dam/images/1/d/f/q/1/r/image.related.StuffLandscapeSixteenByNine.620x349.1dfq72.png/1470802050819.jpg",
+    "PracticeId": "4",
+    "UrlName": "realhousewives",
+  },
+];
+
+export default practices;

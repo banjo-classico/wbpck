@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.name {
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: inherit;
+  text-overflow: inherit;
+  width: 70%
+}
+.address {
+  font-size: var(--font-small);
+  font-weight: var(--light-font);
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: inherit;
+  text-overflow: inherit;
+  width: 70%;
+}

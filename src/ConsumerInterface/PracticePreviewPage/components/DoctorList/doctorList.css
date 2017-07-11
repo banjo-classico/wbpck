@@ -1,0 +1,6 @@
+.container {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+}

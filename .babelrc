@@ -1,0 +1,9 @@
+{
+  "presets": ["movio"],
+  "plugins": ["transform-flow-strip-types"],
+  "env": {
+    "test": {
+      "plugins": ["rewire-exports"],
+    }
+  }
+}

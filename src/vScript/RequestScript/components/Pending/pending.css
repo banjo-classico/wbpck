@@ -1,0 +1,39 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.open-container {
+  padding: 0.8823rem;
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.description {
+  padding: 0.8823rem;
+  border-radius: 4px;
+}
+
+.practice {
+  font-size: var(--font-11);
+  text-align: right;
+}
+
+.image {
+  width: 2.9411rem;
+  height: 2.9411rem;
+  border-radius: 50%;
+  margin: 0 0.8823rem 0 0;
+}
+
+.doc-container {
+  display: flex;
+  margin: 0.8823rem 0 0;
+}
+
+.doc-name {
+  font-size: var(--font-small);
+  font-weight: var(--medium-font);
+}
+
+.doc-type {
+  font-size: var(--font-tiny);
+}

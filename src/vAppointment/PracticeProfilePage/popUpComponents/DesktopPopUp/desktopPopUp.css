@@ -1,0 +1,88 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  overflow: auto;
+}
+
+.pop-up-container-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*height: 75vh;*/
+  min-height: 485px;
+}
+
+.small-window {
+  top: 0;
+  transform: translate(-50%, 0%);
+  min-height: 700px;
+}
+
+.pop-up-container {
+  max-width: 1095px;
+  min-height: 480px;
+  box-shadow: 0 3px 9px var(--box-shadow-21);
+  background: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  padding: 100px 0 0;
+}
+
+.inner-pop-up-container {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 40px 40px;
+  display: flex;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-white);
+  background: var(--color-mid-grey);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9990;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.top-padding {
+  padding: 40px;
+}
+
+.make-appointment {
+  box-shadow: 1px 2px 5px var(--box-shadow-16);
+  padding: 0;
+  max-width: 975px;
+}
+
+.doctor-profile {
+  top: 55%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (--mobile) {
+  .container {
+    overflow: auto; -webkit-overflow-scrolling: touch;
+  }
+}

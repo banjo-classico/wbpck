@@ -1,0 +1,20 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  composes: card from "../../../../styles/card.css";
+  border-radius: 4px;
+  font-size: var(--font-small);
+}
+.bold {
+  font-weight: var(--medium-font);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.button {
+  color: var(--color-pelorous);
+  margin: 20px 0 0;
+  font-size: 1rem;
+  font-weight: var(--medium-font);
+  cursor: pointer;
+}

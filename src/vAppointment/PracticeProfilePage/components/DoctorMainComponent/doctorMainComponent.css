@@ -1,0 +1,38 @@
+@import 'colors.css';
+
+.container {
+  border-bottom: 1px solid var(--color-light-grey);
+  display: flex;
+  justify-content: space-between;
+}
+.appointment-container {
+  display: flex;
+  padding: 0 70px;
+  min-width: 740px;
+
+  @nest &>div:nth-child(2) {
+    background: var(--color-white);
+  }
+  @nest &>div:nth-child(4) {
+    background: var(--color-white);
+  }
+}
+
+.not-available-container {
+  position: relative;
+  width: 100%;
+}
+
+.not-available {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 40px;
+  line-height: 40px;
+  font-style: italic;
+  border-radius: 4px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: #F9F9F9;
+}

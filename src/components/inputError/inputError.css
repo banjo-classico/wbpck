@@ -1,0 +1,72 @@
+@import 'colors.css';
+
+.container {
+  width: 100%;
+  min-width: 190px;
+  background: #298594;
+  position: relative;
+  border-radius: 5px;
+  margin: 5px 0 0 0;
+  font-size: .913em;
+  fill: #298594;
+}
+
+.error-container {
+  position: absolute;
+  top: 100%;
+  z-index: 999;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.tab {
+  position: absolute;
+  top: -19px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.warning-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin: 0 10px;
+}
+
+.message {
+  flex-grow: 1;
+  text-align: center;
+  color: var(--color-white);
+}
+
+/*Input field styles */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.enter {
+  opacity: 0;
+  transition: .7s all;
+}
+.enter-active {
+  opacity: 1;
+}
+
+.leave {
+  opacity: 1;
+  transition: .7s all;
+}
+.leave-active {
+  opacity: 0;
+}

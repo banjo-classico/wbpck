@@ -1,0 +1,42 @@
+@import 'colors.css';
+
+.container {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100%;
+  background: var(--color-white);
+}
+
+.kiwi {
+  width: 155px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-container {
+
+}
+.text {
+  margin: 20px 0;
+  color: var(--color-dark-grey);
+}
+
+.button {
+  composes: button from  "../../../../styles/button.css";
+  background: var(--color-pelorous);
+  color: var(--color-white);
+  border-radius: 50%;
+  border: none;
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  font-size: 1em;
+  margin: 0 0 30px 0;
+}

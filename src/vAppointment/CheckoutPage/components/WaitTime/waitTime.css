@@ -1,0 +1,55 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  margin: 0 15px;
+}
+.content {
+  width: 100%;
+  min-height: 7.8em;
+  text-align: center;
+  color: var(--color-dark-grey);
+  line-height: calc(1em + 10px);
+  margin: 20px 0;
+}
+.bold {
+  color: var(--color-dark-grey);
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  border-radius: 50%;
+  background: var(--color-pelorous);
+  color: var(--color-white);
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: var(--font-medium);
+  margin: 0 auto;
+  display: block;
+}
+
+@media (--desktop) {
+  .content {
+    min-height: 0;
+    padding: 0;
+  }
+  .button {
+    border-radius: 5px;
+    font-size: 16px;
+    width: 115px;
+    height: 60px;
+  }
+}
+@media (--smallerThanIphone6) {
+  .content {
+    margin: 2rem 0;
+    font-size: 1em;
+  }
+  .button {
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0 auto 5px;
+  }
+}

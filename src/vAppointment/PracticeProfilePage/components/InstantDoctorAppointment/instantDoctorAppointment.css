@@ -1,0 +1,63 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.banner {
+  background: var(--color-white);
+  color: var(--color-dark-grey);
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px;
+  position: absolute;
+  bottom: 80%;
+  left: 0;
+  width: 100%;
+}
+
+.doctor-selector {
+  margin: 11px 0 15px 0;
+  padding: 15px;
+  border: 1px solid var(--color-dark-grey);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  width: 85%;
+  border: none;
+  background: var(--color-pelorous);
+  color: var(--color-white);
+  padding: 20px;
+  font-size: 18px;
+}
+
+@media (--desktop) {
+  .container {
+    border: 1px solid var(--color-fine-grey);
+    border-radius: 5px;
+    border-top: none;
+    margin: 0 0 35px 0;
+    padding: 40px;
+  }
+  .button {
+    font-size: 1em;
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+@media (--mobile) {
+  .banner, .doctor-selector {
+    display: none;
+  }
+}

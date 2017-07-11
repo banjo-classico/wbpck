@@ -1,0 +1,67 @@
+@import 'colors.css';
+@import 'screens.css';
+
+:root {
+  --border: 1px solid var(--color-fine-grey);
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: var(--color-mid-grey);
+}
+
+.directions {
+  padding: 5px;
+  color: var(--color-pelorous);
+  font-size: 1rem;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 0 5px;
+}
+
+.iframe {
+  width: 100%;
+  height: 185px;
+  border: none;
+  border-radius: 5px;
+  transition: .5s all;
+
+  @nest &:hover {
+    height: 430px;
+  }
+}
+
+.map {
+  padding: 40px 0;
+}
+
+@media (--desktop) {
+  .directions-container, .directions {
+    display: none;
+  }
+}
+
+@media (--mobile) {
+  .container {
+    padding: 0 0 20px;
+  }
+  .title {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+  .contact-details {
+    display: none;
+  }
+}

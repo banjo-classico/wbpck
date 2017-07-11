@@ -1,0 +1,18 @@
+@import 'colors.css';
+
+.spinner {
+  fill: var(--color-pelorous);
+  width:4.375em;
+  height:4.375em;
+}
+
+.overlay {
+  background: var(--color-fine-grey);
+}
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: static;
+}

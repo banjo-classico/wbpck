@@ -1,0 +1,22 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-grey-2);
+  border-radius: 5px;
+  padding: 0.88235rem;
+  margin: 0 0 5px;
+}
+
+.details {
+  margin: 0 0 0 15px;
+  font-weight: var(--thin-font);
+}
+
+.price-time {
+  margin: 5px 0 0;
+  font-size: var(--font-small);
+  font-weight: var(--light-font);
+}

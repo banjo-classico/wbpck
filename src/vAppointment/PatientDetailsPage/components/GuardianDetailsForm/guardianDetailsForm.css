@@ -1,0 +1,62 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  min-height: 320px;
+  padding: 30px;
+  background: var(--color-white);
+  border-radius: 5px;
+}
+
+.heading {
+  font-size: var(--font-medium);
+  color: var(--color-dark-grey);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+
+.cancel {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  font-size: 1rem;
+  color: var(--color-pelorous);
+}
+
+@media (--desktop) {
+  .button {
+    composes: button from "../../../../styles/button.css";
+    border: none;
+    padding: 15px;
+    font-size: var(--font-small);
+    width: 48%;
+    min-width: 110px;
+    min-height: 60px;
+  }
+
+  .add {
+    composes: button;
+    color: var(--color-white);
+    background: var(--color-pelorous);
+  }
+
+  .cancel {
+    composes: button;
+    color: var(--color-dark-grey);
+    background: var(--color-fine-grey);
+  }
+}

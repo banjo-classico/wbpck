@@ -1,0 +1,56 @@
+@import 'colors.css';
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 210px;
+  transform: translate(-50%, -50%);
+}
+.tick-container {
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0 auto;
+  background-color: var(--color-pelorous);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick-icon {
+  width: 55%;
+  height: 45%;
+  fill: var(--color-white);
+}
+
+.content {
+  padding: 1em 0;
+}
+
+/*  ---------------- ANIMATIONS ---------------------- */
+
+.enter {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 50px auto;
+  width: 0;
+  transition: all 1.5s ease .3s;
+}
+.enter-active {
+  visibility: visible;
+  opacity: 1;
+  margin: 0 auto;
+  height: 6.25em;
+  width: 6.25em;
+}
+.leave {
+  opacity: 1;
+  visibility: visible;
+  transition: 1.5s all ease-out;
+}
+.leave-active {
+  visibility: hidden;
+  opacity: 0;
+}

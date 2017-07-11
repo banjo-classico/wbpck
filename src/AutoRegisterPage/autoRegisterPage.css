@@ -1,0 +1,34 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  background: var(--background-gradient);
+}
+
+.header {
+  @nest &:after {
+    display: none;
+  }
+}
+
+@media (--desktop) {
+  .header {
+    background: var(--color-blue-chill);
+  }
+  .app {
+    @nest &>div:nth-child(2)>div:nth-child(1) {
+      max-width: 100vw;
+    }
+  }
+}

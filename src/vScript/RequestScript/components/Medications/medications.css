@@ -1,0 +1,41 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  word-break: normal;
+}
+
+.open-container {
+  flex-direction: column;
+  margin: 0.8823rem 0 0;
+}
+
+.section-title {
+  width: 100%;
+  padding: 0 0 5px;
+  margin: 0.8823rem 0;
+  border-bottom: 1px solid var(--color-grey-2);
+}
+
+.medication {
+  display: flex;
+  font-size: var(--font-tiny);
+  color: var(--color-grey-3);
+}
+
+.open-medication {
+  padding: 0.8823rem;
+  background-color: var(--color-grey-1);
+  border-radius: 4px;
+  margin: 0 0 5px;
+
+}
+
+.tick {
+  width: 12px;
+  height: 12px;
+  margin: 0 0.8823rem 0 0;
+  fill: var(--color-pelorous);
+}

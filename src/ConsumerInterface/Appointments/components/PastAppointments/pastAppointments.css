@@ -1,0 +1,41 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.spinner {
+  fill: var(--color-pelorous);
+  width:4.375em;
+  height:4.375em;
+}
+
+.overlay {
+  background: var(--color-fine-grey);
+}
+
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: static;
+
+  @nest &::after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100%;
+  }
+}
+
+.inner-container {
+  background-color: var(--color-white);
+  padding: 0 15px;
+
+  @nest &>div:last-child>div>div {
+    border: none;
+  }
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: var(--font-tiny);
+  padding: 20px 0 30px;
+}

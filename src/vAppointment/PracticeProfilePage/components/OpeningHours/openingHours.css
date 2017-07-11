@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'screens.css';
+
+:root {
+  --border: 1px solid var(--color-fine-grey);
+}
+
+.container {
+  border-bottom: var(--border);
+  padding: 20px 0;
+}
+
+.hours-container {
+  font-size: 1em;
+  max-width: 335px;
+  color: var(--color-mid-grey);
+}
+
+.hour-line {
+  padding: 7px 0;
+  width: 100%;
+}
+
+.dow {
+  display: inline-block;
+  margin: 0 18px;
+  min-width: 2.25em;
+  max-width: 2.25em;
+  color: var(--color-dark-grey);
+}
+
+.hourNoteContainer {
+  margin: 25px 18px 4px 18px;
+  font-size: 14px;
+}
+
+@media (--desktop) {
+  .container {
+    border: var(--border);
+    border-radius: 5px;
+    padding: 40px;
+    margin: 5px 0;
+  }
+  .hours-container {
+    font-size: .875rem;
+  }
+  .hour-line {
+    padding: 0 0 20px 0;
+  }
+  .dow {
+    margin: 0 30px 0 0;
+  }
+  .hourNoteContainer {
+    margin: 15px 0 4px 0;
+  }
+}

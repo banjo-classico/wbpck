@@ -1,0 +1,82 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.second-text {
+  margin: 1.5rem 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  margin: 30px 0;
+  min-height: 150px;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5px 0 35px;
+}
+.button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  border-radius: 5px;
+  width: 125px;
+  height: 60px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.cancel {
+  composes: button;
+  color: var(--color-dark-grey);
+  background: var(--color-fine-grey);
+}
+.retry {
+  composes: button;
+  color: var(--color-white);
+  background: var(--color-pelorous);
+}
+
+.name {
+  text-transform: capitalize;
+  color: var(--color-pelorous);
+  font-size: var(--font-medium);
+  line-height: 1.2em;
+}
+
+.phone {
+  color: var(--color-mid-grey);
+  margin: 5px 0 0;
+}
+.icon {
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  margin: 20px 0 0;
+}
+
+@media (--desktop) {
+  .container {
+    font-size: 16px;
+    padding: 25px 65px;
+  }
+
+  .phone-link {
+    display: none;
+  }
+  .name {
+    text-transform: capitalize;
+    color: var(--color-pelorous);
+  }
+}

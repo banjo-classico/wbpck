@@ -1,0 +1,30 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.heading {
+  text-align: center;
+  font-size: 1.11rem;
+}
+
+.reason-form {
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-height: 100px;
+}
+
+.cta {
+  margin: 0 15px 15px 15px;
+}
+
+.note {
+  font-size: var(--font-small);
+  color: var(--color-mid-grey);
+  margin-bottom: 30px;
+}

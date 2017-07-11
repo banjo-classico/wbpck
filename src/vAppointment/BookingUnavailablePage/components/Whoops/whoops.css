@@ -1,0 +1,27 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: var(--font-medium);
+  font-weight: var(--medium-font);
+  margin: 0 0 20px;
+}
+.icon {
+  min-width: 120px;
+  max-width: 120px;
+  height: auto;
+}
+
+@media (--desktop) {
+  .icon {
+    min-width: 130px;
+    max-width: 130px;
+  }
+}

@@ -1,0 +1,45 @@
+@import 'colors.css';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.confirming-header {
+  fill: var(--color-white);
+  color: var(--color-white);
+  background: var(--color-blue-chill);
+  min-height: 120px;
+}
+.confirmed-header {
+  fill: var(--color-white);
+  color: var(--color-white);
+  background: var(--color-green);
+  min-height: 120px;
+}
+
+.error-header {
+  fill: var(--color-white);
+  color: var(--color-white);
+  background: var(--color-blue-chill);
+  min-height: 120px;
+}
+
+.text {
+  font-size: 0.875em;
+  text-transform: capitalize;
+}
+
+.tick, .cross {
+  fill: var(--color-white);
+  margin: 0 10px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.loader {
+  padding: 0 10px;
+}

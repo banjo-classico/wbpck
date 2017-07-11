@@ -1,0 +1,54 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.heading {
+  font-size: var(--font-19);
+  text-align: center;
+  margin: 5px 20px 15px;
+}
+
+.spinner {
+  width: 100%;
+  margin: 40px auto;
+  fill: var(--color-pelorous);
+}
+
+.add-pharmacy {
+  composes: button from "../../styles/button.css";
+  display: flex;
+  align-items: center;
+  border: 1px dashed var(--color-grey-2);
+  padding: 0.88235rem;
+  text-align: left;
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
+}
+
+.plus {
+  fill: var(--color-pelorous);
+  width: 0.88235rem;
+  height: 0.88235rem;
+  margin: 0 0.88235rem 0 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-height: 100px;
+  margin: 0 0 10px;
+}
+
+.cancel {
+  composes: button from "../../styles/button.css";
+  border: none;
+  padding: 0;
+  margin: 0 15px 40px;
+  color: var(--color-pelorous);
+  font-size: var(--font-small);
+}
+
+.cta {
+  margin: 0 15px 15px;
+}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2203.15 -6310.436 25.712 20.72">
+  <defs>
+    <style>
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke: #626262;
+      }
+
+      .cls-3 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-4 {
+        stroke-width: 0.2px;
+      }
+
+      .cls-5 {
+        stroke-width: 0.1px;
+      }
+
+      .cls-6 {
+        stroke-width: 0.3px;
+      }
+    </style>
+  </defs>
+  <g id="group-16" class="cls-2" transform="translate(-2203 -6310.286)">
+    <line id="line" class="cls-3" x2="2.228" transform="translate(3.654 11.141)"/>
+    <line id="line-2" class="cls-3" x2="2.228" transform="translate(3.654 14.349)"/>
+    <line id="line-3" class="cls-3" x2="2.228" transform="translate(3.654 17.558)"/>
+    <line id="line-4" class="cls-3" x2="2.228" transform="translate(7.13 14.349)"/>
+    <line id="line-5" class="cls-3" x2="2.228" transform="translate(7.13 17.558)"/>
+    <line id="line-6" class="cls-3" x2="2.228" transform="translate(10.606 7.932)"/>
+    <line id="line-7" class="cls-3" x2="2.228" transform="translate(10.606 11.141)"/>
+    <line id="line-8" class="cls-3" x2="2.228" transform="translate(7.288 11.141)"/>
+    <line id="line-9" class="cls-3" x2="2.228" transform="translate(10.606 14.349)"/>
+    <line id="line-10" class="cls-3" x2="2.228" transform="translate(10.606 17.558)"/>
+    <line id="line-11" class="cls-3" x2="2.228" transform="translate(14.082 7.932)"/>
+    <line id="line-12" class="cls-3" x2="2.228" transform="translate(14.082 11.141)"/>
+    <line id="line-13" class="cls-3" x2="2.228" transform="translate(14.082 14.349)"/>
+    <line id="line-14" class="cls-3" x2="2.228" transform="translate(14.082 17.558)"/>
+    <line id="line-15" class="cls-3" x2="2.228" transform="translate(17.558 7.932)"/>
+    <line id="line-16" class="cls-3" x2="2.228" transform="translate(17.558 11.141)"/>
+    <line id="line-17" class="cls-3" x2="2.228" transform="translate(17.558 14.349)"/>
+    <line id="line-18" class="cls-3" x2="2.228" transform="translate(17.558 17.558)"/>
+    <line id="line-19" class="cls-3" x2="2.228" transform="translate(21.034 7.932)"/>
+    <line id="line-20" class="cls-3" x2="2.228" transform="translate(21.034 11.141)"/>
+    <line id="line-21" class="cls-3" x2="2.228" transform="translate(21.034 14.349)"/>
+    <path id="path" class="cls-3" d="M158.677,168h2.941v17.38H138V168h2.941" transform="translate(-136.307 -165.059)"/>
+    <line id="line-22" class="cls-4" x2="10.784" transform="translate(8.11 2.941)"/>
+    <g id="group" transform="translate(4.431 1.782)">
+      <g id="group-2" transform="translate(14.464 0)">
+        <path id="path-2" class="cls-5" d="M334.3,155.178v2.5h-3.119v-2.5H334.3m.178-.178H331v2.852h3.476V155Z" transform="translate(-331 -155)"/>
+      </g>
+      <g id="group-3" transform="translate(0 0)">
+        <path id="path-3" class="cls-5" d="M334.478,155.178v2.5h-3.29v-2.5h3.29m.188-.178H331v2.852h3.666V155Z" transform="translate(-331 -155)"/>
+      </g>
+    </g>
+    <path id="path-4" class="cls-6" d="M142.618,137.139v-.98h-2.941V135H136.2v1.159H125.417V135h-3.476v1.159H119v17.38h.98" transform="translate(-119 -135)"/>
+  </g>
+</svg>

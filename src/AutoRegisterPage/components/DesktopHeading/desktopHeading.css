@@ -1,0 +1,52 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 25px;
+  margin: 0 20px 0 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: none;
+  margin: 0 10px 0 0;
+}
+
+.status {
+  background-color: var(--color-pelorous);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.confirmed {
+  background-color: var(--color-green);
+}
+
+.doctor-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}

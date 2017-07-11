@@ -1,0 +1,76 @@
+@import 'nav.css';
+@import 'colors.css';
+@import 'screens.css';
+
+.header{
+  background: var(--background-gradient);
+  color: var(--color-white);
+  fill: var(--color-white);
+
+  @nest &::after {
+    content: none;
+  }
+}
+
+.container {
+  margin: 15px;
+}
+
+.condition {
+  padding: 0 20px;
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  padding: 15px 0 0;
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link-large {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  color: var(--color-pelorous);
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forward-arrow {
+  width: 0.7em;
+  height: 0.7em;
+  fill: var(--color-pelorous);
+  margin-left: 0.313em;
+}
+.faded {
+  padding: 0 20px;
+  color: var(--color-light-grey);
+  fill: var(--color-light-grey);
+}
+
+.cta {
+  align-self: flex-end;
+  margin: 0 15px 25px 0;
+}
+
+@media (--desktop) {
+  .container {
+    width: 440px;
+    margin: 20px;
+  }
+  .nav-items {
+    display: none;
+  }
+}

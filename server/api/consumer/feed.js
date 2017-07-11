@@ -1,0 +1,116 @@
+import { filter } from 'lodash/fp';
+import moment from "moment";
+
+let feed = [{
+  Type: "Appointment",
+  Item: {
+    PracticeName: "Vensa Health Centre",
+    Address: "10 Marau Cres, Mission Bay, Auckland, Auckland 1345, New Zealand",
+    ProviderName: "Dr Bob Belcher",
+    ProviderTitle: "Restaurateur / Meat Artist",
+    ProviderPictureUrl: 'http://68.media.tumblr.com/avatar_4789266bd94d_128.png',
+    Time: new Date().toISOString(),
+    CalendarUrl: 'https://upload.wikimedia.org/wikipedia/en/a/a3/Lordvoldemort.jpg',
+    GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+    DependantId: null,
+    Id: "1",
+    SessionId: "123-456",
+    FirstName: "Junior",
+    LastName: "Dow",
+    DateOfBirth: "1995-06-13T00:00:00",
+    Note: "Junior was feeling a little headache yesterday after playing rugby.",
+    Status: "CONFIRMED",
+  },
+},
+{
+  Type: "Appointment",
+  Item: {
+    PracticeName: "Vensa Health Centre",
+    Address: "10 Marau Cres, Mission Bay, Auckland, Auckland 1345, New Zealand",
+    ProviderName: "Dr Linda Belcher",
+    ProviderTitle: "Enthusiastic Support",
+    ProviderPictureUrl: 'http://rs38.pbsrc.com/albums/e103/BuddhaJ/TV/Bobs%20Burgers/Series%20Stars/Linda.png~c200',
+    Time: new Date().toISOString(),
+    CalendarUrl: 'https://upload.wikimedia.org/wikipedia/en/a/a3/Lordvoldemort.jpg',
+    GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+    DependantId: null,
+    Id: "2",
+    SessionId: "123-456",
+    FirstName: "Jane",
+    LastName: "Dow",
+    DateOfBirth: "1968-11-23T00:00:00",
+    Note: "I just wanted a repeat script. I wish there was an app for it.",
+    Status: "CONFIRMED",
+  },
+},
+{
+  Type: "Appointment",
+  Item: {
+    PracticeName: "Vensa Health Centre",
+    Address: "10 Marau Cres, Mission Bay, Auckland, Auckland 1345, New Zealand",
+    ProviderName: "Dr Linda Belcher",
+    ProviderTitle: "Enthusiastic Support",
+    ProviderPictureUrl: 'http://rs38.pbsrc.com/albums/e103/BuddhaJ/TV/Bobs%20Burgers/Series%20Stars/Linda.png~c200',
+    Time: new Date().toISOString(),
+    CalendarUrl: 'https://upload.wikimedia.org/wikipedia/en/a/a3/Lordvoldemort.jpg',
+    GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+    DependantId: null,
+    Id: "3",
+    SessionId: "123-456",
+    FirstName: "Jane",
+    LastName: "Dow",
+    DateOfBirth: "1968-11-23T00:00:00",
+    Note: "I just wanted a repeat script. I wish there was an app for it.",
+    Status: "PENDING",
+  },
+},
+{
+  Type: "MobileNotVerified",
+  Item: null
+}]
+// },{
+//   PracticeName: "Teh really really long name health clinic",
+//   Address: "58a Akoranga Dr, Northcote",
+//   ProviderName: "Dr Linda Belcher",
+//   ProviderPictureUrl: 'http://rs38.pbsrc.com/albums/e103/BuddhaJ/TV/Bobs%20Burgers/Series%20Stars/Linda.png~c200',
+//   Time: new Date().toISOString(),
+//   CalendarUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+//   Id: "2",
+//   SessionId: "456-789",
+// }, {
+//   PracticeName: "Teh really really long name health clinic",
+//   Address: "58a Akoranga Dr, Northcote",
+//   ProviderName: "Dr Tina Belcher",
+//   ProviderPictureUrl: 'https://pbs.twimg.com/profile_images/827115901006647298/8pFmlaU6_200x200.jpg',
+//   Time: new Date().toISOString(),
+//   CalendarUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+//   Id: "3",
+//   SessionId: "456-789",
+// },{
+//   PracticeName: "Teh really really long name health clinic",
+//   Address: "58a Akoranga Dr, Northcote",
+//   ProviderName: "Dr Darth Vader",
+//   ProviderPictureUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   Time: new Date().toISOString(),
+//   CalendarUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+//   Id: "4",
+//   SessionId: "456-789",
+// },{
+//   PracticeName: "Te Puna Hauora",
+//   Address: "58a Akoranga Dr, Northcote",
+//   ProviderName: "Dr Darth Vader",
+//   ProviderPictureUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   Time: new Date().toISOString(),
+//   CalendarUrl: 'http://vignette2.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754',
+//   GoogleCalendarUrl: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment%20%40%20Beehive%20Medical%20Center&dates=20170228T193000Z/20170228T194500Z&details=&location=Molesworth%20St&pli=1&sf=true&output=xml",
+//   Id: "8",
+//   SessionId: "789-123",
+// }];
+
+// feed = []
+
+const getFeed = () => feed
+export default getFeed;

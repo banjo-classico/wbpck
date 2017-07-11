@@ -1,0 +1,29 @@
+@import "colors.css";
+@import "variables.css";
+@import 'screens.css';
+
+.nav-link-large {
+  color: var(--color-pelorous);
+  font-size: var(--font-large);
+  font-weight: var(--light-font);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rightarrow {
+  width: 0.7em;
+  height: 0.7em;
+  fill: var(--color-pelorous);
+  margin-left: 0.313em;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+}
+
+@media (--desktop) {
+  .nav-link-large {
+    font-size: 18px;
+  }
+}

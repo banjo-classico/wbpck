@@ -1,0 +1,47 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  padding: 20px;
+  border-bottom: 1px solid var(--color-fine-grey);
+  width: 100%;
+}
+
+.specialities-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  color: var(--color-dark-grey);
+  max-width: 380px;
+}
+
+.speciality {
+  padding: 5px;
+  width: 50%;
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (--desktop) {
+  .container {
+    padding: 40px 0;
+  }
+  .speciality {
+    width: auto;
+    background: var(--color-fine-grey);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 20px 10px 0;
+  }
+  .specialities-container {
+    max-width: 100%;
+  }
+}
+
+@media (--mobile) {
+  .container {
+    display: none;
+  }
+}

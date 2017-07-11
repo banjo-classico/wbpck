@@ -1,0 +1,12 @@
+@import 'variables.css';
+
+.button {
+  font-weight: var(--light-font);
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}

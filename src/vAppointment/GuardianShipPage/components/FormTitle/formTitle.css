@@ -1,0 +1,31 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.icon {
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  padding: 3px;
+}
+.title {
+  text-transform: capitalize;
+  color: var(--color-dark-grey);
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  composes: icon;
+  background: var(--color-pelorous);
+  fill: var(--color-white);
+}
+
+@media (--desktop) {
+  .title {
+    text-transform: capitalize;
+    color: var(--color-pelorous);
+  }
+}

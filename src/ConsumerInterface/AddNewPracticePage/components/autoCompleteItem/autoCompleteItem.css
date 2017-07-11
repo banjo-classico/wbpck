@@ -1,0 +1,15 @@
+@import "colors.css";
+
+.item {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 15px;
+  cursor: pointer;
+  min-height: 2.6em;
+  font-size: 1.1176rem;
+  @nest &:hover {
+    color: var(--color-light-grey);
+  }
+}

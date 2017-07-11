@@ -1,0 +1,72 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.background {
+  position: absolute;
+  top: -180px;
+  left: -50%;
+  z-index: -1;
+  background: var(--background-gradient);
+  height: 240px;
+  width: 200%;
+  border-radius: 50%;
+
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-place-holder {
+  border-radius: 50%;
+  width: 8.125em;
+  height: 8.125em;
+  background: var(--color-light-grey);
+}
+
+.blurb-place-holder {
+  margin: 10px 0 0 0;
+  height: 100px;
+  width: 100%;
+  background: var(--color-light-grey);
+}
+
+.spinner {
+  margin: 60px 0 0 0;
+}
+
+@media (--desktop) {
+  .container {
+    flex-direction: row;
+    padding: 0;
+    border: none;
+  }
+  .background {
+    display: none;
+  }
+  .name-container {
+    background: var(--background-gradient);
+    width: 50%;
+    min-height:400px;
+    padding: 20px;
+  }
+  .blurb-place-holder {
+    width: 50%;
+    min-height:400px;
+    padding: 20px;
+  }
+  .spinner {
+    margin: 0 0 0 25%;
+  }
+
+}

@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.app {
+  @nest &>div:nth-child(2) {
+    overflow: visible;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* this is a hack to stop scrolling on update */
+  min-height: 1050px;
+}
+
+.spinner {
+  top: 25%;
+}
+
+.enter {
+  opacity: 0;
+}
+.enter-active {
+  opacity: 1;
+  transition: .5s all;
+}
+.leave {
+  opacity: 1;
+}
+.leave-active {
+  opacity: 0;
+  transition: .5s all;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-content-width);
+  z-index: 1;
+}
+
+.filter-box {
+  min-height: 151px;
+  max-height: 151px;
+}
+
+@media (--mobile) {
+  .container {
+    display: none;
+  }
+}

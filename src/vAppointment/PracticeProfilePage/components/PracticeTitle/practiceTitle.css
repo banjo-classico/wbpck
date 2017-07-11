@@ -1,0 +1,48 @@
+@import 'colors.css';
+@import 'screens.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  color: var(--color-dark-grey);
+  font-size: var(--font-medium);
+  font-weight: var(--light-font);
+  margin: 0 0 5px 0;
+}
+.address {
+  color: var(--color-mid-grey);
+  font-weight: var(--light-font);
+  font-size: inherit;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 0 10px 0
+}
+
+@media (--desktop) {
+  .container {
+    padding: 0;
+    height: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .name {
+    font-size: 27px;
+    color: var(--color-dark-grey);
+  }
+  .address {
+    font-size: 20px;
+    color: var(--color-dark-grey);
+    padding: 0;
+  }
+}

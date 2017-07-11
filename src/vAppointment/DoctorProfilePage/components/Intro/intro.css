@@ -1,0 +1,59 @@
+@import 'colors.css';
+
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 25px;
+  margin: 0 0 25px 0;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  border-radius: 50%;
+  width: 8.125em;
+  height: 8.125em;
+}
+
+.name {
+  color: var(--color-dark-grey);
+  font-size: 1.25em;
+  margin: 20px 0 5px 0;
+}
+.dr-type {
+  font-size: 1rem;
+  color: var(--color-mid-grey);
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  border-radius: 5px;
+  background: var(--color-pelorous);
+  color: var(--color-white);
+  border: none;
+  font-size: 1em;
+  height: 60px;
+  width: 284px;
+  min-height: 50px;
+  margin: 25px 0;
+  align-self: center;
+}
+.hide {
+  display: none;
+}
+
+.blurb {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-mid-grey);
+}
+.padding {
+  padding: 25px 0 0;
+}

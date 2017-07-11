@@ -1,0 +1,44 @@
+@import 'colors.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.input-container {
+  display: flex;
+}
+
+.button {
+  align-self: flex-end;
+}
+
+.spinner {
+  fill: var(--color-white);
+}
+
+.spinner-overlay {
+  background-color: var(--color-white-40);
+}
+
+.hidden {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-gradient);
+  transition: top .3s ease;
+}
+
+.welcome-back {
+  top: 0;
+  transition: top .3s ease;
+}

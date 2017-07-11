@@ -1,0 +1,63 @@
+@import "variables.css";
+@import "colors.css";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+
+  @nest &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 135px;
+    background: var(--header-gradient);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transform: rotate(180deg);
+  fill: var(--color-white);
+  width: 25px;
+  height: 20px;
+  margin: 0 0 25px;
+  z-index: 2;
+}
+
+.whoops {
+  font-size: var(--font-medium);
+  margin: 0 0 20px;
+  z-index: 1;
+}
+
+.pop-up-container {
+  overflow: scroll;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  z-index: 1;
+  background-color: var(--color-white);
+}
+
+.icon {
+  height: 6.47rem;
+}
+
+.message {
+  color: var(--color-dark-grey);
+  padding: 30px 0 15px;
+  font-size: 1rem;
+}

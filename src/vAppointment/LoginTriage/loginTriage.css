@@ -1,0 +1,93 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.header {
+  @nest &:after {
+    display: none;
+  }
+}
+
+.app {
+  background: var(--background-gradient);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  color: var(--color-white);
+}
+.desktop {
+}
+
+.welcome {
+  font-size: 1.6470rem;
+  text-align: center;
+  margin: 3.5294rem 0 0;
+}
+.tenakoe {
+  font-size: 1.8823rem;
+  font-weight: var(--medium-font);
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin: 3.5294rem 0 4.1176rem;
+}
+
+.button {
+  composes: button from "../../styles/button.css";
+  width: 100%;
+  max-width: 310px;
+  padding: 18px 0;
+  border-radius: 30px;
+  font-size: var(--font-medium);
+}
+
+.new-button {
+  composes: button;
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-pelorous);
+  margin: 0 0 20px;
+}
+
+.login-button {
+  composes: button;
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.emergency-warning {
+  text-align: center;
+  margin: 0 40px;
+  max-width: 310px;
+}
+
+@media (--desktop) {
+  .container {
+    height: 100%;
+    padding: 20px 25px 0;
+    width: 475px;
+    color: var(--color-dark-grey);
+  }
+  .button-container {
+    margin: 3.5294rem 0 180px;
+  }
+  .new-button {
+    background-color: var(--color-pelorous);
+    color: var(--color-white);
+  }
+  .login-button {
+    color: var(--color-pelorous);
+    border-color: var(--color-pelorous);
+  }
+}

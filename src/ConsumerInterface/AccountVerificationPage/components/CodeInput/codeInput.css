@@ -1,0 +1,47 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.text {
+  font-size: var(--font-medium);
+  text-align: center;
+}
+
+.input {
+  margin: 30px auto 45px;
+  @nest & input {
+    appearance: none;
+    min-height: 55px;
+    min-width: 55px;
+    border: 1px solid var(--color-mid-grey);
+    color: var(--color-dark-grey);
+  }
+}
+.error {
+  @nest & input {
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+  }
+}
+
+.spinner-container {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  fill: var(--color-pelorous);
+}

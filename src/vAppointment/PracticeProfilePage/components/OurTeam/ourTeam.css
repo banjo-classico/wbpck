@@ -1,0 +1,33 @@
+@import "colors.css";
+@import "screens.css";
+
+.container {
+  padding: 25px 0 25px 15px;
+  background: var(--color-fine-grey);
+}
+
+.section-title {
+  margin: 0 0 25px 0;
+}
+
+.doctor-container {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.doctors {
+  width: 100%;
+  display: flex;
+}
+
+@media (--desktop) {
+  .container {
+    display: none;
+  }
+  .doctor-container {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+}

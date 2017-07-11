@@ -1,0 +1,35 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+}
+
+.img {
+  min-width: 4.7058rem;
+  max-width: 4.7058rem;
+  min-height: 4.7058rem;
+  max-height: 4.7058rem;
+  border-radius: 50%;
+}
+
+.altImg {
+  composes: img;
+
+  @nest &>svg {
+    width: 1.7647rem;
+    height: 1.7647rem;
+  }
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.name {
+  font-size: var(--font-medium);
+  margin: 0 0 10px;
+}

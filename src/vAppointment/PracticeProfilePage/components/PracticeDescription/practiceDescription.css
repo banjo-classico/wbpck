@@ -1,0 +1,19 @@
+@import 'screens.css';
+@import 'colors.css';
+
+.container {
+  margin: 0;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--color-fine-grey);
+}
+
+.text {
+  margin: 0;
+  white-space: pre-line;
+}
+
+@media (--mobile) {
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+@import "colors.css";
+.button {
+  color: var(--color-white);
+  width: 100%;
+  min-height: 5rem;
+  margin: .626rem 0;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.icon {
+  width: 25px;
+  height: 29px;
+  margin: 0 1em 0 0;
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 1.125em;
+}
+
+.add-icon {
+  width: 29px;
+  height: 29px;
+}

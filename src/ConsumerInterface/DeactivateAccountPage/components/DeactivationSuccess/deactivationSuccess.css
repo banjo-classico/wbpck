@@ -1,0 +1,51 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 0.8823rem;
+  min-height: 450px;
+}
+
+.heading {
+  font-size: var(--font-large);
+  font-weight: var(--medium-font);
+  margin: 0 0 1.7647rem;
+  width: 70%;
+}
+
+.text {
+  margin: 0 0 1.7647rem;
+}
+
+.email {
+  font-weight: var(--medium-font);
+  margin: 0 5px;
+}
+
+.vensa {
+  color: var(--color-pelorous);
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-pelorous);
+  color: var(--color-white);
+  min-width: 4.1176rem;
+  min-height: 4.1176rem;
+  max-width: 4.1176rem;
+  max-height: 4.1176rem;
+  font-size: var(--font-medium);
+  margin: 15px auto;
+  padding: 0;
+}

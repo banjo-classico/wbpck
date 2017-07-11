@@ -1,0 +1,69 @@
+:root {
+  --color-red: #FF6A65;
+
+  --color-pelorous: #07A3C8;
+  --color-pelorous-50: #07A3C880;
+  --color-pelorous-25: #07A3C840;
+  --color-blue-chill: #177D91;
+  --color-turquoise: #33CCCC;
+  --color-blue-lagoon: #0E6171;
+
+  --color-green: #23C373;
+  --color-ufo-green: #4CD964;
+
+  --color-gold: #FAC052;
+
+  --color-white: #FFF;
+  --color-white-90: #FFFFFFE6;
+  --color-white-70: #FFFFFFB3;
+  --color-white-50: #FFFFFF80;
+  --color-white-40: #FFFFFF66;
+  --color-white-25: #FFFFFF40;
+  --color-white-10: #FFFFFF1A;
+
+  --color-dark-grey: #6C6C6C;
+  --color-dark-grey-50: #69696980;
+  --color-mid-grey: #989898;
+  --color-light-grey: #DADADA;
+  --color-fine-grey: #EFEFEF;
+
+  --color-grey-5: #6C6C6C;
+  --color-dark-grey-50: #69696980;
+  --color-grey-3: #989898;
+  --color-grey-2: #DADADA;
+  --color-grey-1: #EFEFEF;
+
+  --box-shadow-16: #00000029;
+  --box-shadow-21: #00000036;
+  --black-50: #00000080;
+
+  --header-gradient: linear-gradient(to right, #33CCCC, #07A3C8);
+  --background-gradient: linear-gradient(to bottom right, #33CCCC, #07A3C8);
+  --top-bottom-gradient: linear-gradient(to bottom, #31BECA, #07A3C8);
+  --fade-gradient: linear-gradient(to bottom, #07A3C800, #07A3C8FF);
+  --background-gradient-faded: linear-gradient(to top right, #33CCCCE5, #07A3C8E5);
+}
+
+/*
+100% — FF
+95% — F2
+90% — E6
+85% — D9
+80% — CC
+75% — BF
+70% — B3
+65% — A6
+60% — 99
+55% — 8C
+50% — 80
+45% — 73
+40% — 66
+35% — 59
+30% — 4D
+25% — 40
+20% — 33
+15% — 26
+10% — 1A
+5% — 0D
+0% — 00
+*/

@@ -1,0 +1,18 @@
+.enter {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1.5s ease-out .5s;
+}
+.enter-active {
+  visibility: visible;
+  opacity: 1;
+}
+.leave {
+  opacity: 1;
+  visibility: visible;
+  transition: 1.5s all ease-out;
+}
+.leave-active {
+  visibility: hidden;
+  opacity: 0;
+}

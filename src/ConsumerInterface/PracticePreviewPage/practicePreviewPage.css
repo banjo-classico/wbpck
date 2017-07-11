@@ -1,0 +1,83 @@
+@import 'variables.css';
+@import 'screens.css';
+@import 'colors.css';
+
+.app {
+  background-color: var(--color-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 4.7rem;
+
+  @nest &>div:first-child {
+    height: 4.7rem;
+  }
+}
+.practice-header-container {
+  padding: 20px;
+  width: 100%;
+}
+.doctor-container {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.doctors-header {
+  font-weight: var(--medium-font);
+  padding: 0 0 45px 20px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+    left: 110px;
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+
+  .header {
+    @nest &::after {
+      top: 60px;
+    }
+
+    @nest &>div:nth-child(2) {
+      width: 90%;
+    }
+  }
+}

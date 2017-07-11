@@ -1,0 +1,90 @@
+@import "colors.css";
+@import "screens.css";
+
+:root {
+  --color-input: var(--color-mid-grey);
+}
+
+.icon {
+  min-width: 3.75em;
+  min-height: 7.5em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.75em 0;
+  min-height: 110px;
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 0;
+  @nest & input {
+    color: var(--color-dark-grey);
+    border: 1px solid var(--color-light-grey);
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.loading-icon {
+  display: none;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error {
+  @nest & input {
+    border: 1px solid var(--color-red);
+  }
+}
+
+.error-text {
+  color: var(--color-red);
+  font-size: 14px;
+  align-self: flex-start;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+.warning {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-red);
+  margin: 0 10px 0 0;
+}
+
+.white {
+  @nest & input {
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+  }
+}
+
+@media (--desktop) {
+  .container {
+    padding: 0;
+    margin: 0 auto 110px;
+  }
+  .less-margin {
+    margin: 0 auto 84px;
+  }
+  .icon {
+    margin: 60px 0;
+  }
+  .input {
+    @nest & input {
+      font-size: 27px;
+    }
+  }
+}

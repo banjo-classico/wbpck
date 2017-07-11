@@ -1,0 +1,111 @@
+@import 'colors.css';
+@import 'input.css';
+
+.form {
+  margin: 0;
+}
+.icon {
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  padding: 3px;
+}
+.tick {
+  composes: icon;
+  width: 1.25em;
+  height: 1.25em;
+  background: var(--color-pelorous);
+  fill: var(--color-white);
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  text-transform: capitalize;
+  color: var(--color-pelorous);
+}
+.item {
+  margin: 0 0 30px;
+}
+.input {
+  composes: input from "../../../../styles/input.css";
+  min-height: 38px;
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 1px solid var(--color-fine-grey);
+  text-transform: capitalize;
+}
+.date-input {
+  composes: input;
+  text-transform: none;
+}
+.is-under-age {
+  border-bottom: 1px solid var(--color-red);
+}
+.label {
+  text-transform: capitalize;
+  color: var(--color-dark-grey);
+}
+.filled-label {
+  color: var(--color-mid-grey);
+}
+.shadow {
+  border: 1px solid var(--color-pelorous);
+  border-radius: 5px;
+  padding: 20px 20px 0;
+  @nest &.completed {
+    border: none;
+    padding: 20px 20px 0;
+  }
+}
+.desktop-input-container {
+  display: flex;
+  justify-content: space-between;
+
+  @nest &>div {
+    width: 48%;
+    margin: 0 0 20px;
+  }
+}
+
+.faded {
+  padding: 0 20px;
+  color: var(--color-light-grey);
+}
+.condition {
+  color: var(--color-dark-grey);
+}
+
+.faded-link {
+  color: var(--color-light-grey);
+  font-size: 18px;
+  @nest & .forward-arrow {
+    fill: var(--color-light-grey);
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 20px;
+}
+
+.nav-link-large {
+  display: flex;
+  align-items: center;
+  color: var(--color-pelorous);
+  font-size: 18px;
+  cursor: pointer;
+  @nest & .forward-arrow {
+    fill: var(--color-pelorous);
+  }
+}
+
+.forward-arrow {
+  width: 0.7em;
+  height: 0.7em;
+  margin-left: 0.313em;
+}
+
+.hidden {
+  display: none;
+}

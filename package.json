@@ -1,12 +1,28 @@
 {
   "name": "wbpck",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test for webpack 3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "start": "node src/server.js"
+    "start": "better-npm-run start",
+    "build": "better-npm-run build"
+  },
+  "betterScripts": {
+    "start": {
+      "command": "webpack-dev-server --host 0.0.0.0 --colors --hot --inline --watch-poll --config webpack.dev.config.js",
+      "env": {
+        "TARGET": "http://localhost:3000",
+        "NODE_ENV": "development"
+      }
+    },
+    "build": {
+      "command": "webpack --config webpack.prod.config.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -20,23 +36,62 @@
   },
   "homepage": "https://github.com/nick-jacobs/wbpck#readme",
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.14.0",
+    "better-npm-run": "0.0.15",
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
     "express": "^4.14.0",
+    "file-loader": "^0.11.2",
     "flow-bin": "^0.32.0",
+    "postcss": "^6.0.6",
     "postcss-color-function": "^2.0.1",
-    "postcss-loader": "^0.11.1",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-reporter": "^4.0.0",
     "precss": "^1.4.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-movio": "^1.2.1",
     "babel-preset-react": "^6.11.1",
-    "postcss": "^5.1.2",
-    "postcss-cssnext": "^2.8.0"
+    "classnames": "^2.2.5",
+    "detect-browser": "^1.7.0",
+    "fuzzaldrin": "^2.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "lodash": "^4.17.4",
+    "mobile-detect": "^1.3.6",
+    "modernizr-webpack-plugin": "^1.0.6",
+    "moment": "^2.18.1",
+    "postcss-cssnext": "^2.8.0",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-click-outside": "^2.3.1",
+    "react-datepicker": "^0.49.0",
+    "react-event-listener": "^0.4.5",
+    "react-ga": "^2.2.0",
+    "react-masonry-component": "^5.0.7",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "react-s-alert": "^1.3.0",
+    "react-tabs": "^1.1.0",
+    "react-tagsinput": "^3.17.0",
+    "react-textarea-autosize": "^5.0.7",
+    "react-transition-group": "^2.0.2",
+    "redux": "^3.7.1",
+    "redux-saga": "^0.15.4",
+    "smoothscroll": "^0.3.0",
+    "superagent": "^3.5.2",
+    "superagent-no-cache": "^0.1.1",
+    "superagent-promise-plugin": "^3.2.0",
+    "svg-react-loader": "^0.4.4",
+    "validator": "^8.0.0"
   }
 }

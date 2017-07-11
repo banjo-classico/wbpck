@@ -1,0 +1,86 @@
+@import 'nav.css';
+@import 'variables.css';
+@import 'colors.css';
+@import 'screens.css';
+
+.heading {
+  @nest &::after {
+    content: none;
+  }
+}
+
+.app {
+  background: var(--background-gradient);
+}
+
+.appointmentInfo {
+  background: var(--color-blue-chill);
+  min-height: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  padding: 20px 25px 25px;
+  color: var(--color-mid-grey);
+  min-height: 380px;
+}
+
+.overlay {
+  background: var(--color-white-40);
+}
+.spinner {
+  fill: var(--color-pelorous);
+  width:4.375em;
+  height:4.375em;
+}
+
+.welcome {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: var(--color-mid-grey);
+}
+.kia-ora {
+  font-size: 27px;
+  color: var(--color-dark-grey);
+}
+
+.book-as-guest {
+  margin: 15px 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 290px;
+}
+
+@media (min-width: 350px) {
+  .container {
+    min-height: 500px;
+    padding: 30px 30px;
+  }
+}
+
+@media (--desktop) {
+  .container {
+    height: 100%;
+    padding: 20px 25px 0;
+    width: 475px;
+  }
+  .book-as-guest {
+    max-width: 330px;
+    margin: 40px 0 20px;
+  }
+  .guest-link {
+    margin: 0 0 0 10px;
+  }
+}

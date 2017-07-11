@@ -1,0 +1,25 @@
+@import "colors.css";
+@import "animations.css";
+
+.circle-icon {
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid var(--color-grey-2);
+  width: 1.4705rem;
+  height: 1.4705rem;
+}
+
+.selected {
+  border: none;
+  animation: bigSmall .3s forwards;
+}
+
+.tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.7647rem;
+  height: 0.7647rem;
+  fill: var(--color-white);
+}

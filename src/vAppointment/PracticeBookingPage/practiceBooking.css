@@ -1,0 +1,42 @@
+@import "colors.css";
+
+.header {
+  background: var(--background-gradient);
+  color: white;
+  fill: white;
+  min-height: 270px;
+  z-index: 1;
+
+  @nest &::after {
+    content: none;
+  }
+}
+
+.header-z {
+  z-index: 0;
+}
+
+.page {
+  width: 100%;
+  background: var(--color-fine-grey);
+}
+
+.icon {
+  width: 33%;
+  height: 33%;
+  fill: var(--color-pelorous);
+}
+
+.app {
+  @nest &>div:nth-child(2) {
+    overflow: visible;
+  }
+}
+
+.header-name {
+  width: 75%;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

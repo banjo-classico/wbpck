@@ -1,0 +1,51 @@
+@import "colors.css";
+@import "variables.css";
+
+.header {
+  background: var(--background-gradient);
+  color: var(--color-white);
+  fill: var(--color-white);
+
+  @nest &::after {
+    content: none;
+  }
+}
+
+.greeting {
+  font-size: 27px;
+  text-align: center;
+}
+.selection-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  width: 100%;
+  margin: 30px 0 40px;
+  text-align: center;
+}
+.title-main {
+  font-size: var(--font-medium);
+  padding-bottom: 5px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px 15px;
+  color: var(--color-dark-grey);
+}
+
+.logout-line {
+  text-align: center;
+  margin: 40px 0 6rem;
+  color: var(--color-pelorous);
+}

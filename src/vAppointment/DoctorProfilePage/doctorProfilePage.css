@@ -1,0 +1,61 @@
+@import 'colors.css';
+@import 'screens.css';
+
+.header {
+  background: var(--background-gradient);
+  fill: var(--color-white);
+  /*transition: all 1s .3s;*/
+  overflow: hidden;
+
+  @nest &::after {
+    content: none;
+  }
+}
+
+.banner {
+  min-height: 150px;
+  height: 150px;
+  padding: 0;
+  position: relative;
+}
+
+.inner-container {
+  background: var(--color-fine-grey);
+}
+
+.padding-container {
+  padding: 20px 20px 0;
+  background: var(--color-white);
+}
+
+.languages {
+  padding: 0 0 20px;
+}
+
+.spinner {
+  fill: var(--color-pelorous);
+  margin: 100px 0 0 0;
+}
+
+.copyright {
+  color: var(--color-mid-grey);
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 40px;
+}
+
+@media (--desktop) {
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-light-grey);
+  }
+  .padding-container {
+    padding: 0 20px;
+  }
+  .our-team, .copyright {
+    display: none;
+  }
+}

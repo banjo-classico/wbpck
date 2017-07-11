@@ -1,0 +1,90 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.app {
+  background-color: var(--color-fine-grey);
+  max-width: var(--max-interface-width);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  position: relative;
+}
+
+.cta {
+  z-index: 20;
+}
+.text-cta-icon {
+  width: 15px;
+  height: auto;
+  max-height: 20px;
+  margin: 0 10px 0 0;
+}
+
+.header-name {
+  width: 75%;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.spinner {
+  fill: var(--color-pelorous);
+  width:4.375em;
+  height:4.375em;
+}
+
+.overlay {
+  background: var(--color-white-70);
+  z-index: 100;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+    left: 110px;
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+
+  .header {
+    @nest &::after {
+      top: 60px;
+    }
+
+    @nest &>div:nth-child(2) {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "colors.css";
+.container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+  fill: var(--color-pelorous);
+}
+
+.left{
+  transform: rotate(180deg);
+}
+
+.left-cont {
+  left: 0;
+}

@@ -1,0 +1,63 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.app {
+  background-color: var(--color-fine-grey);
+}
+
+.container {
+  padding: 0 0.8823rem;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.inner-container {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  padding: 1.7647rem;
+  flex-grow: 1;
+  width: 100%;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+    left: 110px;
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 100vh;
+      background: var(--color-fine-grey);
+    }
+  }
+  .header {
+    @nest &::after {
+      top: 60px;
+    }
+  }
+}

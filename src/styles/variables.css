@@ -1,0 +1,22 @@
+:root {
+  --header-height: 60px;
+  --large-font-size: 1.250em;
+  --thin-font: 300;
+  --light-font: 400;
+  --medium-font: 500;
+
+--font-11: 0.6470rem;
+/* 13px */
+  --font-13: 0.7647rem;
+  --font-tiny: 0.7647rem;
+/* 15px */
+  --font-15: 0.88235rem;
+ --font-small: 0.88235rem;
+ --font-19: 1.1176rem;
+  /* 21px */
+  --font-medium: 1.2353rem;
+  /* 23px */
+  --font-large: 1.3523rem;
+
+  --side-margin: 0.88235rem;
+}

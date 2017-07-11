@@ -1,0 +1,66 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.slots-container {
+  text-align: center;
+  min-width: 120px;
+  max-width: 120px;
+  background: #f9f9f9;
+  /*background: var(--color-fine-grey);*/
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slot {
+  margin: 0 0 20px;
+  cursor: pointer;
+
+  @nest &:hover {
+    font-weight: var(--medium-font);
+  }
+}
+
+.empty-slots {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-mid-grey);
+  padding: 26px 20px;
+}
+
+
+.see-more {
+   color: var(--color-pelorous);
+   cursor: pointer;
+ }
+
+.dash {
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.dash > hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1.5px solid var(--color-mid-grey);
+  padding: 0;
+  width: 14px;
+}
+
+
+.enter {
+  opacity: 0;
+}
+.enter-active {
+  opacity: 1;
+  transition: .5s all;
+}
+.leave {
+  opacity: 1;
+}
+.leave-active {
+  opacity: 0;
+  transition: .5s all;
+}

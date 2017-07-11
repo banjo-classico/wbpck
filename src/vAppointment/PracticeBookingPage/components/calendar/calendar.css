@@ -1,0 +1,66 @@
+@import "colors.css";
+@import "variables.css";
+
+:root {
+  --color-border: var(--color-pelorous);
+  --color-calendar-text: var(--color-pelorous);
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 20px 0 0;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-white-40);
+  color: var(--color-white-40);
+  border: none;
+}
+
+.item {
+  composes: button from "../../../../styles/button.css";
+  font-size: 24px;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  color: var(--color-white);
+  min-width: 3.8235rem;
+  min-height: 3.8235rem;
+}
+
+.active {
+  background-color: var(--color-blue-chill);
+}
+
+.month {
+  color: var(--color-white);
+  font-size: 12px;
+  text-transform: capitalize;
+  margin: 0 20px 0 10px;
+}
+
+.format {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+.day {
+  font-size: .875rem;
+  text-transform: capitalize;
+}
+
+.second-month {
+  composes: month;
+  margin: 0 10px 0 20px;
+}

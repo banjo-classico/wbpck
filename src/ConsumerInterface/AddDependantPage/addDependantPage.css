@@ -1,0 +1,64 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+
+.app {
+  background-color: var(--color-fine-grey);
+}
+
+.container {
+  padding: 0 15px 30px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+    left: 110px;
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+
+  .header {
+    @nest &>div:nth-child(2) {
+      width: 90%;
+    }
+    @nest &::after {
+      top: 60px;
+    }
+  }
+}

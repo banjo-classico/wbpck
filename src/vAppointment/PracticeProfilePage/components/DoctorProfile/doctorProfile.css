@@ -1,0 +1,56 @@
+@import 'colors.css';
+
+.container {
+  display: flex;
+  padding: 40px 40px 40px 0;
+}
+
+.doctor-img {
+  /*width is for IE*/
+  width: 105px;
+  min-width: 105px;
+  min-height: 105px;
+  max-width: 105px;
+  max-height: 105px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.doctor-name {
+  color: var(--color-pelorous);
+  font-size: 20px;
+  margin: 0 0 10px;
+  cursor: pointer;
+}
+.type {
+  margin: 0 0 20px;
+}
+.description-container {
+  position: relative;
+}
+.description {
+  overflow: hidden;
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (4) */
+  max-height: 4.8em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: left;
+}
+.read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--color-white);
+  padding: 0 2px;
+}
+.read-more-text {
+  color: var(--color-pelorous);
+  padding: 0 0 0 5px;
+  cursor: pointer;
+}

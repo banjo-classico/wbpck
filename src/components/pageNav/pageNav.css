@@ -1,0 +1,27 @@
+@import 'colors.css';
+
+:root {
+  --color-selected: var(--color-pelorous);
+  --color-unselected: var(--color-pelorous-25);
+}
+
+.page-nav {
+  @nest & :first-child {
+    margin: 0 5% 0 0;
+  }
+  @nest & :last-child {
+    margin: 0 0 0 5%;
+  }
+}
+
+.item {
+  background-color: var(--color-unselected);
+  border-radius: 50%;
+  width: 0.812rem;
+  height: 0.812rem;
+  margin: 0 5%;
+}
+
+.selected {
+  background-color: var(--color-selected);
+}

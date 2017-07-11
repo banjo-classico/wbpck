@@ -1,0 +1,40 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.check {
+  text-transform: none;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  position: relative;
+}
+
+.logo {
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.whoops {
+  font-size: var(--font-medium);
+}
+
+.header {
+  color: var(--color-white);
+
+  @nest &:after {
+    display: none;
+  }
+}
+
+.header-arrow {
+  fill: var(--color-white);
+}

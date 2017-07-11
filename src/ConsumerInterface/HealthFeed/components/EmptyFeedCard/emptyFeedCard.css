@@ -1,0 +1,30 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  background-color: var(--color-white);
+  box-shadow: 0 3px 6px var(--box-shadow-16);
+  border-radius: 4px;
+  padding: 2.0588rem 1.4705rem 2.3529rem;
+  text-align: center;
+}
+
+.kiwi {
+  width: 6.1764rem;
+  height: 5.8823rem;
+  margin: 0 0 20px;
+  /*to avoid cutting off edge of svg*/
+  padding: 1px;
+}
+
+.welcome {
+  font-weight: var(--medium-font);
+  margin: 0 0 10px;
+}
+
+.book-button {
+  composes: button from "../../../../styles/button.css";
+  border: none;
+  font-size: 1rem;
+  color: var(--color-pelorous);
+}

@@ -1,0 +1,98 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.heading {
+  font-size: var(--font-medium);
+  padding: 0 0 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.appointment-details-container {
+  border-top: 1px solid var(--color-light-grey);
+  border-bottom: 1px solid var(--color-light-grey);
+  width: 100%
+}
+
+.appointment-details{
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.image {
+  min-width: 4.11em;
+  min-height: 4.11em;
+  max-width: 4.11em;
+  max-height: 4.11em;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+.practice-name {
+  font-weight: var(--thin-font);
+  margin: 0 0 15px;
+}
+
+.patient-details-container {
+  width: 100%;
+  padding: 30px 0 0;
+}
+
+.patient-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0 10px;
+}
+.detail-container {
+  width: 50%;
+  margin: 0 0 20px
+}
+.label {
+  color: var(--color-mid-grey);
+  font-size: var(--font-small);
+  margin: 0 0 5px;
+}
+.button-container {
+  width: 100%;
+}
+.button {
+  composes: button from "../../../../styles/button.css";
+  display: block;
+  margin: auto;
+  color: var(--color-pelorous);
+  border: none;
+  border-radius: 4px;
+  height: 3.53em;
+  font-size: 1rem;
+  width: 100%;
+}
+.confirm-button {
+  composes: button;
+  background-color: var(--color-pelorous);
+  color: var(--color-white);
+}
+.change-button {
+  composes: button;
+}
+
+@media (max-width: 320px) {
+  .heading {
+    padding: 0 0 15px;
+  }
+  .appointment-details {
+    padding: 15px 0;
+  }
+  .patient-details-container {
+    padding: 15px 0 0;
+  }
+}

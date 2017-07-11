@@ -1,0 +1,35 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  font-size: 1em;
+  text-transform: none;
+
+  @nest & a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: var(--light-font);
+  }
+
+  @nest & a:hover {
+    cursor: pointer;
+  }
+}
+
+.checkbox {
+  display: flex;
+  /*left margin*/
+  min-width: calc(20px + .5em)
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.error {
+  left: 0;
+}

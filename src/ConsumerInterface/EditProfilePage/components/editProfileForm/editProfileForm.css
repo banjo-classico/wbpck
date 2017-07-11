@@ -1,0 +1,54 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  composes: input from "../../../../styles/input.css";
+  padding: 0.8823rem 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: var(--font-medium);
+  font-weight: var(--thin-font);
+
+  @nest &:focus {
+    padding: 0.8823rem 0;
+  }
+}
+
+.input-blocked {
+  composes: input;
+  color: var(--color-dark-grey);
+}
+
+.label {
+  color: var(--color-mid-grey);
+  font-size: var(--font-small);
+}
+
+.button {
+  composes: button from "../../../../styles/button.css";
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 15px 15px;
+  padding: 0;
+  text-transform: capitalize;
+  color: var(--color-white);
+  font-size: var(--font-tiny);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  @nest &:focus {
+    outline: none;
+  }
+}
+
+.success {
+  margin: 0 0 20px 0;
+  text-align: center;
+}

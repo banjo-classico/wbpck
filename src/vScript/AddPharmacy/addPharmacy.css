@@ -1,0 +1,23 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.heading {
+  text-align: center;
+  font-size: var(--font-19);
+}
+
+.reason-form {
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.note {
+  font-size: var(--font-small);
+  color: var(--color-mid-grey);
+  margin-bottom: 30px;
+}

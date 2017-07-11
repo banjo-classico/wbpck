@@ -1,0 +1,27 @@
+@import 'screens.css';
+
+.confirming-content {
+  position: relative;
+  width: 100%;
+  min-height: 7.8em;
+  transition: .5s all;
+
+  @nest &.confirming-busy {
+    min-height: 25em;
+  }
+}
+
+.not-confirmed {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (--desktop) {
+  .confirming-content{
+    @nest &.confirming-busy {
+      min-height: 200px;
+    }
+  }
+}

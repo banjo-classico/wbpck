@@ -1,0 +1,48 @@
+@import 'animations.css';
+
+.container :global(.react-tagsinput) {
+  border: 1px solid var(--color-grey-2);
+  padding: 7px;
+  margin: 0 0 15px;
+  min-height: 67px;
+}
+
+.container :global(.react-tagsinput-input) {
+  border: none;
+  outline: none;
+  color: var(--color-grey-5);
+  font-size: var(--font-small);
+  margin: 15px 8px;
+
+  @nest &::placeholder {
+    color: var(--color-grey-2);
+    font-size: var(--font-small);
+  }
+}
+
+.container :global(.react-tagsinput-tag) {
+  background-color: var(--color-grey-1);
+  padding: 10px;
+  margin: 8px;
+  border-radius: 4px;
+  color: var(--color-grey-5);
+  font-size: var(--font-small);
+  display: inline-flex;
+  animation: appear .3s forwards;
+}
+
+.container :global(.react-tagsinput-remove) {
+  cursor: pointer;
+  font-family: serif;
+  margin: 0 0 0 10px;
+
+  @nest &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 25px;
+    color: var(--color-grey-5);
+    background-image: url("../../images/cross.png");
+    background-size: 25px 25px;
+  }
+}

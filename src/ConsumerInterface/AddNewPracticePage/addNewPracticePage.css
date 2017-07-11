@@ -1,0 +1,70 @@
+@import "colors.css";
+@import "variables.css";
+@import "screens.css";
+
+.app {
+  background: var(--color-fine-grey);
+}
+
+.page {
+  padding: 0 0.88em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.spinner {
+  fill: var(--color-pelorous);
+  width: 30%;
+  height: 30%;
+  max-width: 11.563em;
+}
+
+.overlay {
+  background: var(--color-white-50);
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+    left: 110px;
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+
+  .header {
+    @nest &::after {
+      top: 60px;
+    }
+
+    @nest &>div:nth-child(2) {
+      width: 90%;
+    }
+  }
+}

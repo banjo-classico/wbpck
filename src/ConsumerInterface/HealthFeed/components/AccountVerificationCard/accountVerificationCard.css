@@ -1,0 +1,37 @@
+@import 'variables.css';
+@import 'colors.css';
+
+.container {
+  composes: card from "../../../../styles/card.css";
+  border-top: 3px solid var(--color-red);
+  margin: 0 0 10px;
+  max-width: 670px;
+}
+.header {
+  font-weight: var(--medium-font);
+}
+.text {
+  font-size: var(--font-small);
+  margin: 15px 0 15px;
+  display: flex;
+}
+
+.icon {
+  width: 30px;
+  height: 55px;
+  margin: 0 15px 0 0;
+}
+.button {
+  composes: button from "../../../../styles/button.css";
+  height: 2.3529rem;
+  width: 6.4705rem;
+  font-size: 1rem;
+  padding: 0;
+  background-color: var(--color-pelorous);
+  border: 0;
+  color: var(--color-white);
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}

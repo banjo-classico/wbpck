@@ -1,0 +1,167 @@
+@import 'colors.css';
+@import 'variables.css';
+@import 'screens.css';
+@import 'nav.css';
+
+.container {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 560px;
+  width: 100%;
+  max-width: var(--max-interface-width);
+  position: relative;
+  margin: auto;
+}
+
+.inner-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em 1em 3.5295em;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  fill: var(--color-white);
+  height: 30px;
+  width: 80px;
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-text {
+  font-size: 1.8823rem;
+  font-weight: var(--medium-font);
+  padding: 2.353rem 0 0 0;
+}
+
+.small-text {
+  font-size: 1.6470rem;
+  font-weight: var(--thin-font);
+  color: var(--color-white);
+  padding: 0 0 1.7647rem 0;
+}
+
+.forgot-password {
+  @nest & a {
+    font-weight: var(--light-font);
+    color: var(--color-white);
+  }
+}
+
+.bottom-text {
+  text-align: center;
+}
+.signup {
+  margin: 0 0 0 5px;
+}
+
+/*To hide the header bar*/
+.hidden {
+  display: none;
+}
+
+/* -------------------- ANIMATIONS --------------------- */
+.enter {
+ right: 100%;
+}
+.enter-active {
+  transition: .3s ease;
+  right: 0;
+}
+.leave {
+  left: 0;
+}
+.leave-active {
+  transition: .3s ease;
+  left: 100%;
+}
+.forgot-enter {
+ left: 100%;
+}
+.forgot-enter-active {
+  transition: .3s ease;
+  left: 0;
+}
+.forgot-leave {
+  right: 0;
+}
+.forgot-leave-active {
+  transition: .3s ease;
+  right: 100%;
+}
+
+@media (--desktop) {
+  .app {
+    max-width: var(--max-interface-width);
+    position: relative;
+    margin: auto;
+    height: 90%;
+    box-shadow: -10px 3px 25px var(--box-shadow-21);
+
+    @nest &::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 30vh;
+      background: var(--color-dark-grey);
+    }
+
+    @nest &::after {
+      content: '';
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      z-index: -1;
+      height: 70vh;
+      background: var(--color-fine-grey);
+    }
+  }
+}
+
+@media (max-height: 480px) and (orientation: portrait) {
+  .container {
+    min-height: 480px;
+  }
+}
+
+/*.hidden {
+  display: none;
+}
+
+.app {
+  @nest &>div:nth-child(2) {
+    display: none;
+  }
+
+  @nest &::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background-color: var(--color-pelorous);
+    background-image: url("../../images/vensa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}*/

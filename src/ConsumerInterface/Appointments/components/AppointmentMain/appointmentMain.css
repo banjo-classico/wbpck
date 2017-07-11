@@ -1,0 +1,132 @@
+@import 'colors.css';
+@import 'variables.css';
+
+:root {
+  --color-doc-name: var(--color-pelorous);
+  --color-pin: var(--color-pelorous-50);
+  --color-border: var(--color-light-grey);
+  --color-gray-text: var(--color-mid-grey);
+  --container-padding: 15px;
+  --img-size: 80px;
+  --small-img-size: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.inner-container {
+  display: flex;
+  width: 100%;
+  margin: 0 0 15px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 5px 0;
+  flex-grow: 1;
+  margin: 0 0 40px var(--container-padding);
+  width: 100%;
+}
+.details-past {
+  position: relative;
+  width: 70%;
+  margin: 0 0 0 var(--container-padding);
+}
+
+.img {
+  min-width: var(--img-size);
+  min-height: var(--img-size);
+  max-width: var(--img-size);
+  max-height: var(--img-size);
+  width: var(--img-size);
+  height: var(--img-size);
+  border-radius: 50%;
+}
+.img-past {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.time {
+  font-weight: var(--medium-font);
+}
+.time-past {
+  font-size: 13px;
+}
+.time-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.name-container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+}
+.extra-width {
+  width: 100%;
+}
+
+.doc-name {
+  max-width: 100%;
+  min-width: 100%;
+}
+.provider-title {
+  font-weight: var(--light-font);
+  padding: 1px;
+}
+.practice-name {
+  composes: provider-title;
+}
+
+.booked-for {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: var(--font-small);
+  width: 100%;
+  letter-spacing: 1px;
+  /*padding: 0 0 0 2.6470rem;*/
+  background-color: #f7f7f7;
+}
+.booked-for-past {
+  letter-spacing: normal;
+  padding: 0;
+  position: static;
+  background-color: transparent;
+  text-align: left;
+}
+
+@media (max-width: 320px) {
+  .img {
+    min-width: var(--small-img-size);
+    min-height: var(--small-img-size);
+    max-width: var(--small-img-size);
+    max-height: var(--small-img-size);
+  }
+  .details {
+    margin: 0 0 20px var(--container-padding);
+  }
+}
+/*for galaxy S3*/
+@media (min-width: 350px) and (max-width: 370px) {
+  .time {
+    font-size: 16px;
+  }
+}

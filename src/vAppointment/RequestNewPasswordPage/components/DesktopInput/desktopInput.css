@@ -1,0 +1,39 @@
+@import 'colors.css';
+
+.outer-container {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  border-bottom: 1px solid var(--color-fine-grey);
+}
+
+.input {
+  width: 100%;
+  color: var(--color-dark-grey);
+  composes: input from "../../../../styles/input.css";
+  border-bottom: none;
+  font-size: 20px;
+  min-height: 40px;
+
+  @nest &:focus {
+    padding: 0;
+    min-height: 40px;
+  }
+}
+
+.error {
+  border-bottom: 1px solid var(--color-red);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-red);
+}
+
+.error-message {
+  color: var(--color-red);
+  margin: 10px 0 0;
+}

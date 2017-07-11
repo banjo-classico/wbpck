@@ -1,0 +1,21 @@
+@import 'colors.css';
+@import 'variables.css';
+
+.container {
+  composes: button from "../../../../styles/button.css";
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 1rem;
+  color: var(--color-pelorous);
+}
+
+.faded {
+  color: var(--color-mid-grey);
+}
+
+.countdown-text {
+  display: flex;
+  color: var(--color-mid-grey);
+  margin: 0 0 0 5px;
+}

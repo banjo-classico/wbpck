@@ -1,0 +1,56 @@
+@import 'colors.css';
+@import 'screens.css';
+
+/*For clearing header*/
+.hidden {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-grow: 1;
+  transition: 1s all;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading-gif {
+  min-width: 17rem;
+  min-height: 17rem;
+  max-width: 17rem;
+  max-height: 17rem;
+  transition: 1.5s all ease-out .5s;
+  @nest &.gif-busy {
+    min-width: 9.41rem;
+    max-width: 9.41rem;
+    min-height: 9.41rem;
+    max-height: 9.41rem;
+    margin: 80px;
+  }
+}
+
+@media (--desktop) {
+  .container {
+    width: 600px;
+    height: 370px;
+    margin: 0;
+  }
+  .loading-gif {
+    transition: 1.5s all ease-out .5s;
+    @nest &.gif-busy {
+      min-width: 170px;
+      max-width: 170px;
+      min-height: 170px;
+      max-height: 170px;
+      margin: 0 0 40px;
+    }
+  }
+}
+
+@media (--smallerThanIphone6) {
+  .container {
+    @nest &.container-busy {
+      margin: 5px 0 0;
+    }
+  }
+}

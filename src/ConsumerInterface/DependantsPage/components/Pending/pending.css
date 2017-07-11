@@ -1,0 +1,21 @@
+@import 'colors.css';
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-50);
+  z-index: 9999;
+}
+.gif {
+  width: 8.8235rem;
+  height: 8.8235rem;
+  margin: 11.765rem auto;
+  border-radius: 40%;
+  display: block;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin { 100% {transform: rotate(360deg)}}
